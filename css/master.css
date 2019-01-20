@@ -1,7 +1,7 @@
 :root {
   --first-color: white;
   --second-color: black;
-  --shadow-color: rgba(0, 0, 0, 0.5);
+  --shadow-color: rgba(0, 0, 0, 0);
 }
 
 /* ========= VERTICAL MENU ========= */
@@ -38,7 +38,7 @@
 }
 
 .navbar-logo:hover {
-  transform: translateX(-4px);
+  transform: translateX(-8px);
 }
 
 .navbar-logo img {
@@ -322,6 +322,10 @@ table {
   border-radius: 16px;
 }
 
+.monitor img {
+  border-radius: 8px 8px 0 0;
+}
+
 .monitor::before {
   content: "";
   position: absolute;
@@ -403,9 +407,9 @@ table {
   /* box-shadow: 0 0 16px var(--shadow-color); */
 }
 
-.tablet:hover, .phone:hover, .monitor:hover, .large-phone:hover {
+/* .tablet:hover, .phone:hover, .monitor:hover, .large-phone:hover {
   transform: translateY(-8px);
-}
+} */
 
 /* ========= ACCORDION ========= */
 
@@ -467,6 +471,94 @@ table {
   margin-left: 5px;
 }
 
-.active:after {
+.accordion.active:after {
   content: "▲";
+}
+
+/* ========= SLIDESHOW ========= */
+
+.slideshow-container {
+  position: relative;
+}
+
+.slideshow-slide {
+  display: none;
+  border: var(--first-color) solid;
+  border-width: 0 8px 0 8px;
+  background-color: var(--first-color);
+}
+
+.slideshow-prevbtn, .slideshow-nextbtn {
+  background-color: var(--first-color);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  margin-top: -32px;
+  padding: 17px;
+  padding-top: 22px;
+  box-shadow: 0 0 16px var(--shadow-color);
+  transition: 0.25s;
+  user-select: none;
+}
+
+.slideshow-prevbtn {
+  border-radius: 0 32px 32px 0;
+  left: 0;
+}
+
+.slideshow-prevbtn:hover {
+  transform: translateX(-8px);
+}
+
+.slideshow-nextbtn {
+  border-radius: 32px 0 0 32px;
+  right: 0;
+}
+
+.slideshow-nextbtn:hover {
+  padding-right: 9px;
+}
+
+.slideshow-dots {
+  position: relative;
+  background-color: var(--first-color);
+  width: 800px;
+  border: var(--first-color) solid 8px;
+  border-radius: 0 0 32px 32px;
+  user-select: none;
+}
+
+.slideshow-dots-dot {
+  transition: 0.25s;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  background-color: var(--second-color);
+  border-radius: 4px;
+  margin-top: 16px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.slideshow-dots-dot:hover {
+  height: 24px;
+  margin-top: 8px;
+}
+
+.slideshow-dots-dot.active {
+  height: 32px;
+  margin-top: 0;
+}
+
+.slideshow-header {
+  background-color: var(--first-color);
+  position: relative;
+  width: 800px;
+  border: var(--first-color) solid 8px;
+  border-radius: 32px 32px 0 0;
+}
+
+.slideshow-header label {
+  color: black;
 }
