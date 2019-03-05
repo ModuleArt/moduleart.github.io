@@ -139,7 +139,7 @@ hr {
 }
 
 .tile:hover {
-  transform: translateY(8px);
+  transform: translateY(-8px);
 }
 
 .header {
@@ -149,10 +149,10 @@ hr {
 .tile label {
   color: var(--color-back);
   cursor: pointer;
+  margin: 8px;
 }
 
-.tile img {
-  border-radius: 4px;
+.tile .icon {
   float: left;
 }
 
@@ -161,6 +161,12 @@ hr {
   margin-top: -8px;
   padding: 8px 8px 0 0;
   float: right;
+}
+
+.tile .preview {
+  filter: drop-shadow(0 0 8px var(--color-back-overdark));
+  margin: 12px;
+  margin-top: 20px;
 }
 
 /*
@@ -312,11 +318,11 @@ footer {
 }
 
 /*
-██████  ██    ██ ████████ ████████  ██████  ███    ██
-██   ██ ██    ██    ██       ██    ██    ██ ████   ██
-██████  ██    ██    ██       ██    ██    ██ ██ ██  ██
-██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██
-██████   ██████     ██       ██     ██████  ██   ████
+          ██████  ██    ██ ████████ ████████  ██████  ███    ██
+          ██   ██ ██    ██    ██       ██    ██    ██ ████   ██
+          ██████  ██    ██    ██       ██    ██    ██ ██ ██  ██
+          ██   ██ ██    ██    ██       ██    ██    ██ ██  ██ ██
+          ██████   ██████     ██       ██     ██████  ██   ████
 */
 
 .btn-label {
