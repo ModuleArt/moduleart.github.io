@@ -10,12 +10,14 @@
 
 <html lang="en" dir="ltr">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
 		<title>Module Art ••• Home</title>
 		<link rel="stylesheet" href="css/master.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/scroll.js"></script>
+		<script src="js/navbar.js"></script>
 		<script type="text/javascript">
 			$( document ).ready(function() {
 				$('#navbar').load('html/navbar.html');
@@ -45,109 +47,97 @@
 -->
 
 			<div>
-				<img class="home-icon" src="imgs/icon.png"><br>
+				<img class="home-icon" src="imgs/icon.png">
 				<label class="title">Module Art</label><br>
 				<label class="subtitle">We develop indie games and applications. And not only!</label><br>
 				<label>In Module Art, we are trying to create something extraordinary from a simple idea.</label>
 			</div>
-			<table class="home-table" cellspacing="4">
-				<tr>
-					<td class="header">
-						<label class="title">Games</title>
-					</td>
-				</tr>
-				<tr>
-					<td class="tile">
-						<a href="http://moduleart.github.io/flyingnyan/">
-							<img class="icon" src="imgs/games/flyingnyan/icon.png">
-							<label class="subtitle">Flying Nyan</label><br>
-							<label>Nyan cat flying game</label>
-							<img class="platform" src="imgs/icons/android-black.png" title="Android">
-							<img class="preview" src="imgs/games/flyingnyan/preview.png">
-						</a>
-					</td>
-					<td class="tile">
-						<a href="http://moduleart.github.io/tesurvival/">
-							<img class="icon" src="imgs/games/tesurvival/icon.png">
-							<label class="subtitle">The Environs: Survival</label><br>
-							<label>Post-apocalyptic survival</label>
-							<img class="platform" src="imgs/icons/android-black.png" title="Android">
-							<img class="preview" src="imgs/games/tesurvival/preview.png">
-						</a>
-					</td>
-					<td class="tile">
-						<a href="http://moduleart.github.io/orhighway/">
-							<img class="icon" src="imgs/games/orhighway/icon.png">
-							<label class="subtitle">Old Races: Highway</label><br>
-							<label>Retro old-style racing</label>
-							<img class="platform" src="imgs/icons/android-black.png" title="Android">
-							<img class="preview" src="imgs/games/orhighway/preview.png">
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td class="header">
-						<label class="title">Apps</title>
-					</td>
-				</tr>
-				<tr>
-					<td class="tile">
-						<a href="http://moduleart.github.io/arrownotes/">
-							<img class="icon" src="imgs/apps/arrownotes/icon.png">
-							<label class="subtitle">Arrow Notes</label><br>
-							<label>App for taking notes</label>
-							<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
-							<img class="preview" src="imgs/apps/arrownotes/preview.png">
-						</a>
-					</td>
-					<td class="tile">
-						<a href="http://moduleart.github.io/arrowbrowser/">
-							<img class="icon" src="imgs/apps/arrowbrowser/icon.png">
-							<label class="subtitle">Arrow Browser</label><br>
-							<label>Web browser</label>
-							<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
-							<img class="preview" src="imgs/apps/arrowbrowser/preview.png">
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td class="header">
-						<label class="title">Ideas</title>
-					</td>
-				</tr>
-				<tr>
-					<td class="tile">
-						<a>
-							<label class="subtitle">Arrow Dock</label><br>
-							<label>Application launcher</label>
-							<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
-						</a>
-					</td>
-					<td class="tile">
-						<a>
-							<label class="subtitle">Arrow Paint</label><br>
-							<label>Raster graphics editor</label>
-							<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
-						</a>
-					</td>
-					<td class="tile">
-						<a>
-							<label class="subtitle">Arrow Music</label><br>
-							<label>Music player</label>
-							<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td class="tile">
-						<a>
-							<label class="subtitle">My Rival</label><br>
-							<label>Physics racing</label>
-							<img class="platform" src="imgs/icons/android-black.png" title="Android">
-						</a>
-					</td>
-				</tr>
-			</table>
+
+			<hr>
+			<label class="title">Games</label><br>
+
+			<div class="tile">
+				<a href="http://moduleart.github.io/flyingnyan/">
+					<img class="icon" src="imgs/games/flyingnyan/icon.png">
+					<label class="subtitle">Flying Nyan</label>
+					<label class="normal">Nyan cat flying game</label>
+					<img class="platform" src="imgs/icons/android-black.png" title="Android">
+					<img class="preview" src="imgs/games/flyingnyan/preview.png">
+				</a>
+			</div>
+			<div class="tile">
+				<a href="http://moduleart.github.io/tesurvival/">
+					<img class="icon" src="imgs/games/tesurvival/icon.png">
+					<label class="subtitle">The Environs: Survival</label>
+					<label>Post-apocalyptic survival</label>
+					<img class="platform" src="imgs/icons/android-black.png" title="Android">
+					<img class="preview" src="imgs/games/tesurvival/preview.png">
+				</a>
+			</div>
+			<div class="tile">
+				<a href="http://moduleart.github.io/orhighway/">
+					<img class="icon" src="imgs/games/orhighway/icon.png">
+					<label class="subtitle">Old Races: Highway</label>
+					<label>Retro old-style racing</label>
+					<img class="platform" src="imgs/icons/android-black.png" title="Android">
+					<img class="preview" src="imgs/games/orhighway/preview.png">
+				</a>
+			</div>
+
+			<hr>
+			<label class="title">Apps</label><br>
+
+			<div class="tile">
+				<a href="http://moduleart.github.io/arrownotes/">
+					<img class="icon" src="imgs/apps/arrownotes/icon.png">
+					<label class="subtitle">Arrow Notes</label>
+					<label>App for taking notes</label>
+					<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
+					<img class="preview" src="imgs/apps/arrownotes/preview.png">
+				</a>
+			</div>
+			<div class="tile">
+				<a href="http://moduleart.github.io/arrowbrowser/">
+					<img class="icon" src="imgs/apps/arrowbrowser/icon.png">
+					<label class="subtitle">Arrow Browser</label>
+					<label>Chromium web browser</label>
+					<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
+					<img class="preview" src="imgs/apps/arrowbrowser/preview.png">
+				</a>
+			</div>
+
+			<hr>
+			<label class="title">Ideas</label><br>
+
+			<div class="tile">
+				<a>
+					<label class="subtitle">Arrow Dock</label>
+					<label>Application launcher</label>
+					<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
+				</a>
+			</div>
+			<div class="tile">
+				<a>
+					<label class="subtitle">Arrow Paint</label>
+					<label>Raster graphics editor</label>
+					<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
+				</a>
+			</div>
+			<div class="tile">
+				<a>
+					<label class="subtitle">Arrow Music</label>
+					<label>Music player</label>
+					<img class="platform" src="imgs/icons/windows-black.png" title="Windows">
+				</a>
+			</div>
+			<div class="tile">
+				<a>
+					<label class="subtitle">My Rival</label>
+					<label>Physics racing</label>
+					<img class="platform" src="imgs/icons/android-black.png" title="Android">
+				</a>
+			</div>
+
 		</center>
 		<footer id="footer"></footer>
 	</body>
