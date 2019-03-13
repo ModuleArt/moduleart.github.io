@@ -105,8 +105,9 @@ hr {
 .description {
   display: inline-block;
   width: 480px;
-  margin-bottom: 32px;
-  padding: 16px;
+  margin: 4px;
+  padding: 8px;
+  border-left: var(--color-top) solid 2px;
 }
 
 .main {
@@ -125,7 +126,7 @@ hr {
   text-align: left;
 }
 
-.description label {
+.description label, .updates label {
   display: block;
   text-align: left;
 }
@@ -134,7 +135,9 @@ hr {
   display: inline-block;
   width: 480px;
   vertical-align: top;
-  padding: 16px;
+  padding: 8px;
+  margin: 4px;
+  border-left: var(--color-top) solid 2px;
 }
 
 /*
