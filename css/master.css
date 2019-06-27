@@ -16,7 +16,7 @@
 :root{
   --color-top: rgb(255, 255, 255);
   --color-over: rgba(255, 255, 255, 0.1);
-  --color-back: rgb(0, 0, 0);
+  --color-back: rgb(26, 11, 42);
 
   --color-red: rgb(255, 63, 52);
   --color-green: rgb(11, 232, 129);
@@ -74,15 +74,15 @@
 body {
   padding: 0;
   margin: 0;
-  /* background-color: var(--color-back); */
+  background-color: var(--color-back);
   /* min-width: 1280px; */
   /* background-image: linear-gradient(180deg, #2683E2, #4BD3E3); */
   /* background-image: url("/imgs/background.png"); */
  
   /* background-attachment: fixed; */
-  
+  /* background-image: url(../imgs/background.png); */
 }
-
+/* 
 body::before {
   content: "";
   position: fixed;
@@ -93,7 +93,7 @@ body::before {
   bottom: -32px;
   z-index: -1; 
   filter: blur(16px);
-}
+} */
 
 a {
   text-decoration: none;
@@ -218,8 +218,8 @@ hr {
 }
 
 .main-name .icon {
-  border-radius: var(--px-radius);
-  border: 2px solid var(--color-over);
+  /* border-radius: var(--px-radius); */
+  /* border: 2px solid var(--color-over); */
   float: left;
 }
 
@@ -287,6 +287,7 @@ label.link:hover {
   margin-top: -16px;
   border-radius: var(--px-radius);
   float: left;
+  border: 2px solid var(--color-over);
 }
 
 .tile {
@@ -317,14 +318,10 @@ label.link:hover {
   border: solid 2px transparent;
 }
 
-.tile.enabled:hover .icon {
-  border: 2px solid transparent;
-}
-
 .tile div {
   border-radius: var(--px-radius);
   border: solid 2px var(--color-over);
-  height: 104px;
+  height: 100px;
   padding: 16px;
   transition: 0.25s;
   text-align: left;
@@ -341,7 +338,7 @@ label.link:hover {
   /* float: left; */
   color: var(--color-top);
   display: block;
-  margin-top: -4px;
+  margin-top: -6px;
 }
 
 .tile.enabled label {
@@ -351,7 +348,6 @@ label.link:hover {
 .tile .icon {
   float: left;
   border-radius: var(--px-radius);
-  border: solid 2px var(--color-over);
   margin-right: 8px;
   transition: 0.25s;
 }
@@ -411,10 +407,11 @@ label.link:hover {
 #navbar-menu-btn {
   display: none !important;
   float: right;
+  border: 2px solid transparent;
 }
 
 #navbar-menu-btn:hover {
-  background-color: var(--color-over);
+  border-color: var(--color-over);
 }
 
 .navbar-btn, #navbar-menu-btn, .navbar-links-btn, .footer-btn {
