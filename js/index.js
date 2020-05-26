@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    GetLatestReleaseInfo();  
+    $('.screenshot').magnificPopup({
+        type:'image',
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
+
+    GetLatestReleaseInfo();
 });  
 
 function GetLatestReleaseInfo() {
