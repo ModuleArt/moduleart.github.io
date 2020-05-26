@@ -1,86 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="theme-color" content="#1C1F21">
-        <title>Module Art - We develop applications and indie games</title>
-        <link rel="shortcut icon" type="image/png" href="imgs/module/module64.png"/>
-        <link rel="stylesheet" href="slick/slick.css">
-        <link rel="stylesheet" href="slick/slick-theme.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/home.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/load.js"></script>
-        <script type="text/javascript" src="js/hamburger.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/slider.js"></script>
-    </head>
-    <body>
-        <header id="header"></header>
-        <center class="main">
-            <div class="title">
-                <img src="imgs/module/module256.png">
-                <label>Module Art</label>
-            </div>
-            <div class="description">
-                We develop applications and indie games. And not only!<br>
-                In Module Art, we are trying to create something extraordinary from a simple idea.
-            </div>
-            <label class="main-title">Apps</label>
-            <div class="apps">
-                <a class="app" href="https://moduleart.github.io/ferny">
-                    <img class="preview" src="imgs/ferny/screen1.png">
-                    <div>
-                        <img class="icon" src="imgs/ferny/ferny256.png">
-                        <label class="title">Ferny</label>
-                        <label class="subtitle">Web browser</label>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Art - Apps & indie games</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="particles.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+    <meta name="theme-color" content="#0d0c0c">
+    <link rel="shortcut icon" type="image/png" href="imgs/moduleart256.png">
+</head>
+<body>
+    <div class="background">
+        <div class="animation-wrapper">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="https://moduleart.github.io/" title="Module Art - Apps & indie games">
+                <div class="logo">
+                    <img src="imgs/moduleart256.png"/>
+                    <span>Module Art</span>
+                </div>
+            </a>
+            <div class="links">
+                <a href="https://github.com/ModuleArt" title="GitHub">
+                    <div class="link">
+                        <img src="imgs/icons/github.png"/>
                     </div>
-                    <img class="platform" src="imgs/icons/windows.png" title="Windows">
                 </a>
-                <a class="app" href="https://moduleart.github.io/arrownotes">
-                    <img class="preview" src="imgs/arrownotes/screen1.png">
-                    <div>
-                        <img class="icon" src="imgs/arrownotes/icon128.png">
-                        <label class="title">Arrow Notes</label>
-                        <label class="subtitle">Reminder and lists</label>
+                <a href="https://play.google.com/store/apps/dev?id=5537509128825838150" title="Google Play">
+                    <div class="link">
+                        <img src="imgs/icons/google-play.png"/>
                     </div>
-                    <img class="platform" src="imgs/icons/windows.png" title="Windows">
+                </a>
+                <a href="mailto:module.art.team@gmail.com"  title="Mail to Module Art">
+                    <div class="link">
+                        <img src="imgs/icons/mail.png"/>
+                    </div>
                 </a>
             </div>
-            <label class="main-title">Games</label>
-            <div class="apps">
-                <a class="app" href="https://moduleart.github.io/tesurvival">
-                    <img class="preview" src="imgs/tesurvival/screen1.jpg">
-                    <div>
-                        <img class="icon" src="imgs/tesurvival/icon64.png">
-                        <label class="title">The Environs</label>
-                        <label class="subtitle">Survival</label>
-                    </div>
-                    <img class="platform" src="imgs/icons/android.png" title="Android">
-                </a>
-                <a class="app" href="https://moduleart.github.io/flyingnyan">
-                    <img class="preview" src="imgs/flyingnyan/screen1.png">
-                    <div>
-                        <img class="icon" src="imgs/flyingnyan/icon64.png">
-                        <label class="title">Flying Nyan</label>
-                        <label class="subtitle">Time killer</label>
-                    </div>
-                    <img class="platform" src="imgs/icons/android.png" title="Android">
-                </a>
-                <a class="app" href="https://moduleart.github.io/orhighway">
-                    <img class="preview" src="imgs/orhighway/screen1.png">
-                    <div>
-                        <img class="icon" src="imgs/orhighway/icon64.png">
-                        <label class="title">Old Racing</label>
-                        <label class="subtitle">Highway</label>
-                    </div>
-                    <img class="platform" src="imgs/icons/android.png" title="Android">
-                </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="top-section">
+                <h1>Hello!</h1>
+                <span>We develop applications and indie games. And not only...<br>In Module Art, we are trying to create something extraordinary from a simple idea.</span>
             </div>
-        </center>
-        <footer id="footer"></footer>
-    </body>
+            <h2>Best apps</h2>
+            <div class="tile-section">
+                <div class="tile">
+                    <img class="icon" src="https://raw.githubusercontent.com/ModuleArt/quick-picture-viewer/master/quick-picture-viewer/resources/imgs/picture32.png"/>
+                    <span class="title">Quick Picture Viewer</span>
+                    <div class="links">
+                        <a id="quick-picture-viewer-link" title="Download .exe installer" href="https://github.com/ModuleArt/quick-picture-viewer/releases">
+                            <div class="link">
+                                <img src="imgs/icons/download.png"/>
+                                <span>Windows</span>
+                                <span class="version"></span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ModuleArt/quick-picture-viewer" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                            </div>
+                        </a>
+                        <a href="https://trello.com/b/mFgTs747/quick-picture-viewer" title="Trello planner">
+                            <div class="link">
+                                <img src="imgs/icons/trello.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="screenshot" src="https://raw.githubusercontent.com/ModuleArt/quick-picture-viewer/master/docs/screenshots/main.png"/>
+                    <div class="desc">Lightweight, versatile desktop photo viewer for Windows.</div>
+                </div>
+                <div class="tile">
+                    <img class="icon" src="https://raw.githubusercontent.com/ModuleArt/quick-screen-recorder/master/quick-screen-recorder/resources/imgs/rec32.png"/>
+                    <span class="title">Quick Screen Recorder</span>
+                    <div class="links">
+                        <a id="quick-screen-recorder-link" title="Download .exe installer" href="https://github.com/ModuleArt/quick-screen-recorder/releases">
+                            <div class="link">
+                                <img src="imgs/icons/download.png"/>
+                                <span>Windows</span>
+                                <span class="version"></span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ModuleArt/quick-screen-recorder/" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                            </div>
+                        </a>
+                        <a href="https://trello.com/b/LFUzVgvI/quick-screen-recorder" title="Trello planner">
+                            <div class="link">
+                                <img src="imgs/icons/trello.png"/>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <img class="screenshot" src="https://github.com/ModuleArt/quick-screen-recorder/raw/master/docs/screenshots/main.png"/>
+                    <div class="desc">Lightweight desktop screen recorder for Windows.</div>
+                </div>
+                <div class="tile">
+                    <img class="icon" src="https://raw.githubusercontent.com/ModuleArt/quick-color-picker/master/quick-color-picker/resources/imgs/picker32.png"/>
+                    <span class="title">Quick Color Picker</span>
+                    <div class="links">
+                        <a id="quick-color-picker-link" title="Download .exe installer" href="https://github.com/ModuleArt/quick-color-picker/releases">
+                            <div class="link">
+                                <img src="imgs/icons/download.png"/>
+                                <span>Windows</span>
+                                <span class="version"></span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ModuleArt/quick-color-picker" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                            </div>
+                        </a>
+                        <a href="https://trello.com/b/mFgTs747/quick-color-picker" title="Trello planner">
+                            <div class="link">
+                                <img src="imgs/icons/trello.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="screenshot" src="https://github.com/ModuleArt/quick-color-picker/raw/master/docs/screenshots/main.png"/>
+                    <div class="desc">Lightweight desktop color picker and color editor utility to get and save colors code quickly for Windows.</div>
+                </div>
+            </div>
+            <h2>Paused projects</h2>
+            <div class="tile-section">
+                <div class="mini-tile">
+                    <img class="icon" src="https://github.com/ModuleArt/arrownotes/blob/master/imgs/apps/arrownotes/icon.png?raw=true"/>
+                    <span class="title">Arrow Notes</span>
+                    <div class="links">
+                        <a href="https://github.com/ModuleArt/arrownotes" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                                <span class="version">Coming soon...</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mini-tile">
+                    <img class="icon" src="https://raw.githubusercontent.com/ModuleArt/ferny/master/imgs/icon32.png"/>
+                    <span class="title">Ferny Web Browser</span>
+                    <div class="links">
+                        <a href="https://github.com/ModuleArt/ferny" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                                <span class="version">Desktop app</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mini-tile">
+                    <img class="icon" src="https://github.com/ModuleArt/quick-music-player/blob/master/quick-music-player/resources/imgs/music32.png?raw=true"/>
+                    <span class="title">Quick Music Player</span>
+                    <div class="links">
+                        <a href="https://github.com/ModuleArt/quick-music-player" title="GitHub">
+                            <div class="link">
+                                <img src="imgs/icons/github.png"/>
+                                <span class="version">Desktop app</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mini-tile">
+                    <img class="icon" src="https://github.com/ModuleArt/tesurvival/blob/master/imgs/games/tesurvival/icon.png?raw=true"/>
+                    <span class="title">The Environs: Survival</span>
+                    <div class="links">
+                        <a href="https://play.google.com/store/apps/details?id=com.moduleart.tesurvival" title="Google Play">
+                            <div class="link">
+                                <img src="imgs/icons/google-play.png"/>
+                                <span class="version">Mobile game</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>© 2020 Module Art</span>
+            <a href="https://github.com/ModuleArt" title="GitHub Module Art page">GitHub</a>
+            <span>module.art.team@gmail.com</span>
+        </div>
+    </footer>
+</body>
 </html>
+
+
