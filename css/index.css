@@ -155,7 +155,7 @@ header .links .link:hover {
 }
 
 .tile-section .mini-tile .link {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 .tile-section .mini-tile .links {
@@ -163,7 +163,7 @@ header .links .link:hover {
 }
 
 .tile-section .mini-tile .desc {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 .tile-section .screenshot {
@@ -326,6 +326,11 @@ footer span {
     main {
         padding: 0 16px;
     }
+
+    .pre-footer {
+        margin: 64px 0 0 0;
+        padding: 0 8px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -352,6 +357,15 @@ footer span {
 
     .container h2 {
         margin: 64px 0 32px 0;
+    }
+
+    footer .container {
+        display: block;
+    }
+
+    footer span {
+        margin-top: 8px;
+        display: block;
     }
 }
 
