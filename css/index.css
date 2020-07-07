@@ -86,6 +86,7 @@ header .links .link {
 
 header .links .link img {
     width: 24px;
+    vertical-align: middle;
 }
 
 header a:focus .link {
@@ -234,6 +235,39 @@ header .links .link:hover {
     font-weight: 20px;
 }
 
+/* pre footer */
+
+.pre-footer {
+    margin: 128px 0 64px 0;
+}
+
+.pre-footer .link {
+    display: inline-block;
+    transition: transform 0.2s, opacity 0.2s;
+    margin-top: 20px;
+}
+
+.pre-footer .link img {
+    width: 24px;
+}
+
+.pre-footer a:focus .link {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.pre-footer .link:hover {
+    transform: translateY(-4px);
+    opacity: 0.5;
+}
+
+.pre-footer .link img, .pre-footer .link span {
+    vertical-align: middle;
+}
+
+.pre-footer .link span {
+    margin-left: 4px;
+}
+
 /* footer */
 
 footer {
@@ -248,23 +282,8 @@ footer .container {
     align-items: stretch;
 }
 
-footer a {
-    transition: transform 0.2s, opacity 0.2s;
-    padding: 0 32px;
-}
-
 footer span {
     opacity: 0.5;
-}
-
-footer a:hover {
-    transform: translateY(-4px);
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-footer a:focus {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 /* media */
@@ -333,10 +352,6 @@ footer a:focus {
 
     .container h2 {
         margin: 64px 0 32px 0;
-    }
-
-    footer a {
-        padding-right: 0;
     }
 }
 
