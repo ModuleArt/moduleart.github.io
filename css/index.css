@@ -84,6 +84,10 @@ header .links .link {
     transition: transform 0.2s, opacity 0.2s;
 }
 
+header .links .link img {
+    width: 24px;
+}
+
 header a:focus .link {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
@@ -139,6 +143,14 @@ header .links .link:hover {
     padding: 32px;
     width: calc(25% - 80px);
     margin-bottom: 32px;
+}
+
+.tile-section.col-2 .mini-tile {
+    width: calc(50% - 80px);
+}
+
+.tile-section.col-3 .mini-tile {
+    width: calc(33.3% - 80px);
 }
 
 .tile-section .mini-tile .link {
@@ -199,6 +211,10 @@ header .links .link:hover {
     font-size: 14px;
 }
 
+.tile-section .link img {
+    width: 24px;
+}
+
 .tile-section .link span {
     margin-left: 4px;
 }
@@ -254,22 +270,24 @@ footer a:focus {
         width: 100%;
     }
 
-    .tile-section .mini-tile {
+    .tile-section .mini-tile, .tile-section.col-2 .mini-tile, .tile-section.col-3 .mini-tile {
         width: calc(50% - 80px);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .tile-section .mini-tile {
+    .tile-section .mini-tile, .tile-section.col-2 .mini-tile, .tile-section.col-3 .mini-tile {
         width: 100%;
         margin-bottom: 16px;
         padding: 16px;
+        border-radius: 16px;
     }
 
     .tile-section .tile {
         text-align: center;
         margin-bottom: 16px;
         padding: 16px;
+        border-radius: 16px;
     }
 
     .tile-section .tile .links {
@@ -279,6 +297,7 @@ footer a:focus {
 
     .tile-section .tile .screenshot {
         height: 200px;
+        border-radius: 8px 8px 0 0;
     }
 
     main {
@@ -302,6 +321,10 @@ footer a:focus {
 
     .top-section {
         padding: 60px 8px;
+    }
+
+    .tile-section .tile .screenshot {
+        height: 140px;
     }
 
     .container h2 {
