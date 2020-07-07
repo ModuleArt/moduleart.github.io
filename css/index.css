@@ -161,6 +161,10 @@ header .links .link:hover {
     float: none;
 }
 
+.tile-section .mini-tile .desc {
+    margin-top: 24px;
+}
+
 .tile-section .screenshot {
     border-radius: 16px 16px 0 0;
     width: 100%;
