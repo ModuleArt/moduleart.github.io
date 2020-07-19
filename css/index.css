@@ -183,7 +183,7 @@ header .links .link:hover {
 
 .tile-section .icon {
     vertical-align: middle;
-    width: 32px;
+    width: 48px;
 }
 
 .tile-section .desc {
@@ -193,6 +193,7 @@ header .links .link:hover {
 
 .tile-section .links {
     float: right;
+    margin: 8px 0;
 }
 
 .tile-section .link {
@@ -229,7 +230,7 @@ header .links .link:hover {
 }
 
 .tile-section .title {
-    margin-left: 8px;
+    margin-left: 10px;
     vertical-align: middle;
     font-weight: bold;
     font-weight: 20px;
@@ -238,7 +239,7 @@ header .links .link:hover {
 /* pre footer */
 
 .pre-footer {
-    margin: 128px 0 64px 0;
+    margin-top: 128px;
 }
 
 .pre-footer .link {
@@ -298,7 +299,7 @@ footer span {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .tile-section .mini-tile, .tile-section.col-2 .mini-tile, .tile-section.col-3 .mini-tile {
         width: 100%;
         margin-bottom: 16px;
@@ -328,7 +329,7 @@ footer span {
     }
 
     .pre-footer {
-        margin: 64px 0 0 0;
+        margin-top: 64px;
         padding: 0 8px;
     }
 }
