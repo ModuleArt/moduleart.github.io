@@ -15,7 +15,14 @@ function GetLatestReleaseInfo() {
     $.each(repositories, function(key, value) {
         $.getJSON("https://api.github.com/repos/ModuleArt/" + value + "/tags").done(function (json) {
             let link = document.getElementById(value + "-link");
-            link.href = "https://github.com/ModuleArt/" + value + "/releases/download/" + json[0].name + "/" + filenames[key] + "-Setup.msi";
+
+            link.href = "https://github.com/ModuleArt/" + value + "/releases/download/" + json[0].name + "/" + filenames[key] + "-Setup";
+            if (key == 0) {
+                link.href += ".exe";
+            } else {
+                link.href += ".msi";
+            }
+            
             link.getElementsByClassName("version")[0].innerHTML = json[0].name;
         });
     });

@@ -146,6 +146,10 @@ header .links .link:hover {
     margin-bottom: 32px;
 }
 
+.tile-section.col-1 .mini-tile {
+    width: calc(100% - 80px);
+}
+
 .tile-section.col-2 .mini-tile {
     width: calc(50% - 80px);
 }
