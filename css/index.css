@@ -42,6 +42,7 @@ header {
 header .logo {
     float: left;
     transition: transform 0.2s;
+    border-radius: 4px;
 }
 
 header .logo:hover {
@@ -61,7 +62,7 @@ header .logo:hover img {
 header .logo span {
     font-size: 20px;
     vertical-align: middle;
-    padding-left: 16px;
+    padding: 0 4px 0 16px;
     font-weight: bold;
     transition: opacity 0.2s;
 }
@@ -82,6 +83,7 @@ header .links .link {
     display: inline-block;
     margin-left: 32px;
     transition: transform 0.2s, opacity 0.2s;
+    border-radius: 4px;
 }
 
 header .links .link img {
@@ -171,12 +173,12 @@ header .links .link:hover {
 }
 
 .tile-section .screenshot {
-    border-radius: 16px 16px 0 0;
-    width: 100%;
-    margin: 20px 0;
+    border-radius: 32px 32px 0 0;
+    width: calc(100% + 64px);
+    margin: 28px -32px;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     object-position: top;
 }
@@ -204,6 +206,7 @@ header .links .link:hover {
     margin: 4px 0 4px 16px;
     transition: transform 0.2s, opacity 0.2s;
     display: inline-block;
+    border-radius: 4px;
 }
 
 .tile-section .link:hover {
@@ -226,7 +229,7 @@ header .links .link:hover {
 }
 
 .tile-section .link span {
-    margin-left: 4px;
+    margin: 0 4px;
 }
 
 .tile-section .version {
@@ -249,11 +252,23 @@ header .links .link:hover {
 .pre-footer .link {
     display: inline-block;
     transition: transform 0.2s, opacity 0.2s;
-    margin-top: 20px;
+    margin-top: 28px;
+    padding-right: 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .pre-footer .link img {
-    width: 24px;
+    width: 32px;
+    border-radius: 4px 0 0 4px;
+}
+
+.pre-footer a {
+    margin-right: 28px;
+}
+
+.pre-footer a:last-child {
+    margin-right: 0;
 }
 
 .pre-footer a:focus .link {
@@ -270,7 +285,7 @@ header .links .link:hover {
 }
 
 .pre-footer .link span {
-    margin-left: 4px;
+    margin: 0 12px;
 }
 
 /* footer */
