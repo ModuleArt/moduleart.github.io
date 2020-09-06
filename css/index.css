@@ -109,7 +109,7 @@ header .links .link:hover {
     font: 16px "Open Sans";
 }
 
-.container a {
+.container a, .mfp-title a {
     text-decoration: none;
     color: #fff;
 }
@@ -173,21 +173,24 @@ header .links .link:hover {
 }
 
 .tile-section .screenshot {
-    border-radius: 32px 32px 0 0;
+    border-radius: 16px 16px 0 0;
     width: calc(100% + 64px);
     margin: 28px -32px;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     height: 300px;
     object-fit: cover;
     object-position: top;
+    transition: border-radius 0.2s, transform 0.2s;
 }
 
 .tile-section .screenshot:hover {
     cursor: zoom-in;
+    border-radius: 0;
+    transform: translateY(-8px);
 }
 
-.tile-section .icon {
+.tile-section .icon, .mfp-title .icon {
     vertical-align: middle;
     width: 48px;
 }
@@ -197,46 +200,46 @@ header .links .link:hover {
     text-align: center;
 }
 
-.tile-section .links {
+.tile-section .links, .mfp-title .links {
     float: right;
     margin: 8px 0;
 }
 
-.tile-section .link {
+.tile-section .link, .mfp-title .link {
     margin: 4px 0 4px 16px;
     transition: transform 0.2s, opacity 0.2s;
     display: inline-block;
     border-radius: 4px;
 }
 
-.tile-section .link:hover {
+.tile-section .link:hover, .mfp-title .link:hover {
     transform: translateY(-4px);
     opacity: 0.5;
     cursor: pointer;
 }
 
-.tile-section a:focus .link {
+.tile-section a:focus .link, .mfp-title a:focus {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
-.tile-section .link img, .tile-section .link span {
+.tile-section .link img, .tile-section .link span, .mfp-title .link img, .mfp-title .link span {
     vertical-align: middle;
     font-size: 14px;
 }
 
-.tile-section .link img {
+.tile-section .link img, .mfp-title .link img {
     width: 24px;
 }
 
-.tile-section .link span {
+.tile-section .link span, .mfp-title .link span {
     margin: 0 4px;
 }
 
-.tile-section .version {
+.tile-section .version, .mfp-title .version {
     opacity: 0.25;
 }
 
-.tile-section .title {
+.tile-section .title, .mfp-title .title {
     margin-left: 10px;
     vertical-align: middle;
     font-weight: bold;
@@ -254,13 +257,15 @@ header .links .link:hover {
     transition: transform 0.2s, opacity 0.2s;
     margin-top: 28px;
     padding-right: 8px;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.09);
+    font-weight: bold;
 }
 
 .pre-footer .link img {
     width: 32px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 8px 0 0 8px;
+    padding: 8px;
 }
 
 .pre-footer a {
@@ -285,7 +290,7 @@ header .links .link:hover {
 }
 
 .pre-footer .link span {
-    margin: 0 12px;
+    margin: 0 16px;
 }
 
 /* footer */
@@ -308,7 +313,7 @@ footer span {
 
 /* media */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .tile-section .tile {
         width: 100%;
     }
@@ -319,6 +324,19 @@ footer span {
 }
 
 @media screen and (max-width: 650px) {
+    header .logo {
+        float: none;
+    }
+
+    header .links {
+        float: none;
+        margin-top: 32px;
+    }
+
+    header .links .link {
+        margin: 0 16px;
+    }
+
     .tile-section .mini-tile, .tile-section.col-2 .mini-tile, .tile-section.col-3 .mini-tile {
         width: 100%;
         margin-bottom: 16px;
@@ -333,14 +351,18 @@ footer span {
         border-radius: 16px;
     }
 
-    .tile-section .tile .links {
+    .tile-section .tile .links, .mfp-title .links {
         float: none;
         margin-top: 16px;
     }
 
+    .mfp-title {
+        text-align: center;
+    }
+
     .tile-section .tile .screenshot {
         height: 200px;
-        border-radius: 8px 8px 0 0;
+        width: calc(100% + 32px);
     }
 
     main {
@@ -351,22 +373,14 @@ footer span {
         margin-top: 64px;
         padding: 0 8px;
     }
+
+    .pre-footer a {
+        display: block;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 450px) {
-    header .logo {
-        float: none;
-    }
-
-    header .links {
-        float: none;
-        margin-top: 32px;
-    }
-
-    header .links .link {
-        margin: 0 16px;
-    }
-
     .top-section {
         padding: 60px 8px;
     }
@@ -391,16 +405,47 @@ footer span {
 
 /* magnific popup */
 
+img.mfp-img {
+    padding-bottom: 120px;
+    pointer-events: none;
+}
+
+.mfp-gallery .mfp-image-holder .mfp-figure {
+    cursor: default;
+}
+
+.mfp-bottom-bar {
+    top: calc(100% - 69px);
+}
+
+.mfp-figure:after {
+    box-shadow: none;
+    border-radius: 0 0 32px 32px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mfp-arrow-right:before {
+    border-left: none;
+}
+
+.mfp-arrow-left:before {
+    border-right: none;
+}
+
+.mfp-title {
+    font: 16px "Open Sans";
+    padding: 0 28px 0 20px;
+}
+
 .mfp-fade.mfp-bg {
     opacity: 0;
-
     -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
 }
 
 .mfp-fade.mfp-bg.mfp-ready {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .mfp-fade.mfp-bg.mfp-removing {
@@ -410,7 +455,6 @@ footer span {
 .mfp-fade.mfp-wrap .mfp-content {
     opacity: 0;
     transform: scale(0.5);
-  
     -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
@@ -424,4 +468,26 @@ footer span {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
     opacity: 0;
     transform: scale(0.5);
+}
+
+.mfp-s-ready .mfp-preloader {
+    font: 16px "Open Sans";
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
 }
