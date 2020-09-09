@@ -200,6 +200,70 @@ header .links .link:hover {
     text-align: center;
 }
 
+.tile-section .release-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font: 14px "Open Sans";
+    width: 100%;
+    margin-top: 16px;
+    outline: none;
+    padding: 4px;
+    transition: transform 0.2s;
+    border-radius: 4px;
+}
+
+.tile-section .release-btn:hover {
+    transform: translateY(-4px);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tile-section .release-btn:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.tile-section .release-btn:after {
+    margin: 0 0 2px 10px;
+    content: "";
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.2s, margin 0.2s;
+}
+
+.tile-section .release-btn.show:after {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    margin: 0 0 -3px 10px;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-32px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+
+.tile-section .release-info {
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 24px;
+    display: none;
+    animation: 0.2s slide-down;
+}
+
+.tile-section .release-info.show {
+    display: block;
+}
+
 .tile-section .links, .mfp-title .links {
     float: right;
     margin: 8px 0;
