@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    updateMasonry();
+
+    $(window).resize(function() {
+        updateMasonry();
+    });
+
     $(".screenshot").magnificPopup({
         type: "image",
         removalDelay: 300,
@@ -58,4 +64,15 @@ function toggleReleaseInfo(btn) {
     btn.classList.toggle("show");
     let relInfo = btn.parentNode.getElementsByClassName("release-info")[0];
     relInfo.classList.toggle("show");
+    updateMasonry(btn.parentNode.parentNode);
+}
+
+function updateMasonry(section) {
+    if (section != null) {
+        $(section).masonry();
+    } else {
+        $(".tile-section").each(function(index, element) {
+            $(element).masonry();
+        });
+    }
 }
