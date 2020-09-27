@@ -56,6 +56,7 @@ function GetReposInfo() {
         $.getJSON("https://api.github.com/repos/ModuleArt/" + value).done(function (json) {
             let desc = document.getElementById(value).getElementsByClassName("desc")[0];
             desc.innerHTML = json.description;
+            updateMasonry(desc.parentNode.parentNode);
         });
     });
 } 
