@@ -153,18 +153,14 @@ header .links .link:hover {
 }
 
 .tile-section .screenshot {
-    border-radius: 16px;
     width: calc(100% + 64px);
     margin: 32px -32px;
     object-fit: cover;
-    object-position: top;
-    transition: border-radius 0.2s, transform 0.2s;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
 }
 
 .tile-section .screenshot:hover {
     cursor: zoom-in;
-    border-radius: 0;
     transform: translateY(-8px);
 }
 
