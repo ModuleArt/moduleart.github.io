@@ -37,7 +37,7 @@ header {
     box-sizing: border-box;
     background-color: var(--module-color-light);
     background-image: linear-gradient(to right bottom, var(--module-color-light), var(--module-color-dark));
-    padding-bottom: 140px;
+    padding-bottom: 15vw;
 }
 
 header a {
@@ -96,6 +96,10 @@ header .navbar a:hover .link {
 
 /* APPS */
 
+.apps {
+    margin-top: -5vw;
+}
+
 .apps .app-row {
     display: flex;
     justify-content: center;
@@ -110,6 +114,7 @@ header .navbar a:hover .link {
 
 .apps .icon {
     width: 128px;
+    margin-top: 32px;
     filter: var(--filter-shadow-white);
 }
 
@@ -139,10 +144,21 @@ header .navbar a:hover .link {
     text-decoration: none;
     font: 20px/30px "Inter"; 
     display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px;
 }
 
 .apps a:hover {
     text-decoration: underline
+}
+
+.apps a img {
+    vertical-align: middle;
+}
+
+.apps a span {
+    margin: 0 8px;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -287,6 +303,44 @@ footer a:hover {
 
 /* MEDIA */
 
+@media screen and (max-width: 1200px) {
+    .apps {
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    .apps .app-row {
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .apps .column {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .apps .screenshot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        padding-bottom: 32px;
+        position: fixed;
+        z-index: 500;
+    }
+
+    .header-svg {
+        display: none;
+    }
+
+    .apps {
+        padding: 128px 0 0 0;
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 480px) {
     header {
         justify-content: center;
@@ -296,9 +350,25 @@ footer a:hover {
         display: none;
     }
 
+    main .donate a {
+        width: 100%;
+    }
+
     footer {
         flex-direction: column;
         gap: 8px;
         text-align: center;
     }
+}
+
+/* SPECIAL EFFECTS */
+
+.special-effects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
 }
