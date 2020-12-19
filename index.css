@@ -47,6 +47,7 @@ header a {
 
 header .logo {
     transition: transform var(--animation-speed);
+    padding: 6px 0;
 }
 
 header a:hover .logo {
@@ -68,6 +69,12 @@ header .logo span {
     vertical-align: middle;
     padding: 0 4px 0 16px;
     font: bold 20px/30px "Inter";
+}
+
+header .logo .tagline {
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: normal;
 }
 
 header .navbar .link {
@@ -103,7 +110,7 @@ header .navbar a:hover .link {
 .apps .app-row {
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .apps .column {
@@ -119,7 +126,7 @@ header .navbar a:hover .link {
 }
 
 .apps h1 {
-    font: bold 42px/72px "Inter"; 
+    font: bold 36px/48px "Inter"; 
     color: #000;
     margin: 16px;
 }
@@ -142,7 +149,7 @@ header .navbar a:hover .link {
 .apps a {
     color: var(--module-color-light);
     text-decoration: none;
-    font: 20px/30px "Inter"; 
+    font: 16px/24px "Inter"; 
     display: inline-block;
     vertical-align: middle;
     margin: 0 8px;
@@ -157,7 +164,7 @@ header .navbar a:hover .link {
 }
 
 .apps a span {
-    margin: 0 8px;
+    margin: 0 6px;
     vertical-align: middle;
 }
 
@@ -324,24 +331,13 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 900px) {
-    header {
-        padding-bottom: 32px;
-        position: fixed;
-        z-index: 500;
-    }
-
+@media screen and (max-width: 950px) {
     .header-svg {
-        display: none;
-    }
-
-    .apps {
-        padding: 128px 0 0 0;
-        margin-top: 0;
+        padding-top: 64px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
     header {
         justify-content: center;
     }
@@ -358,6 +354,12 @@ footer a:hover {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .tagline {
+        display: none;
     }
 }
 
