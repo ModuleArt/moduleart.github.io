@@ -14,3 +14,7 @@ $(document).ready(function () {
         });
     }
 });
+
+function scrollToId(id) {
+	$("body,html").animate({ scrollTop: document.getElementById(id).offsetTop }, 800);
+}
