@@ -26,6 +26,17 @@ body {
     background: #f1f1f1;  
 }
 
+body::after {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 256px;
+    content: "";
+    background: linear-gradient(to bottom, transparent, #f1f1f1);
+    pointer-events: none;
+}
+
 /* HEADER */
 
 header {
@@ -95,6 +106,7 @@ header .navbar a:hover .link {
 .header-svg {
     position: relative;
     pointer-events: none;
+    transform: translateY(-2vw);
 }
 
 .header-svg svg {
@@ -104,7 +116,7 @@ header .navbar a:hover .link {
 /* APPS */
 
 .apps {
-    margin-top: -5vw;
+    margin-top: -9vw;
 }
 
 .apps .app-row {
@@ -134,7 +146,7 @@ header .navbar a:hover .link {
 .apps h3 {
     font: 20px/30px "Inter"; 
     color: #000;
-    margin: 20px 16px;
+    margin: 20px 32px;
 }
 
 .apps .screenshot {
@@ -173,15 +185,6 @@ header .navbar a:hover .link {
 main {
     text-align: center;
     padding: 0 16px;
-}
-
-main .screenshot {
-    filter: var(--filter-shadow-extra-black);
-    border-radius: 8px;
-    margin-top: -21vw;
-    background: #333;
-    border: 2px solid rgba(0, 0, 0, 0.25);
-    max-width: 100%;
 }
 
 main h2 {
@@ -275,6 +278,8 @@ footer {
     justify-content: space-between;
     box-sizing: border-box;
     margin-top: 128px;
+    position: relative;
+    z-index: 1;
 }
 
 footer span,
@@ -329,9 +334,7 @@ footer a:hover {
     .apps .screenshot {
         display: none;
     }
-}
 
-@media screen and (max-width: 950px) {
     .header-svg {
         padding-top: 64px;
     }
@@ -346,13 +349,20 @@ footer a:hover {
         display: none;
     }
 
+    .apps .column h3 {
+        margin: 16px 0;
+    }
+
     main .donate a {
         width: 100%;
     }
+	
+	footer span {
+		margin-bottom: 8px;
+	}
 
     footer {
         flex-direction: column;
-        gap: 8px;
         text-align: center;
     }
 }
