@@ -116,17 +116,17 @@ header .navbar a:hover .link {
 /* APPS */
 
 .apps {
-    margin-top: -9vw;
+    margin-top: -8vw;
 }
 
 .apps .app-row {
     display: flex;
     justify-content: center;
-    margin-bottom: 160px;
+    margin-bottom: 144px;
 }
 
 .apps .column {
-    max-width: 570px;
+    max-width: 574px;
     width: 100%;
     text-align: center;
 }
