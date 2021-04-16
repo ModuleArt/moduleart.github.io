@@ -38,7 +38,6 @@ header {
     background-color: var(--module-color-light);
     background-image: linear-gradient(to right bottom, var(--module-color-light), var(--module-color-dark));
     padding-bottom: 10vw;
-    z-index: -1;
 }
 
 header a {
