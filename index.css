@@ -26,17 +26,6 @@ body {
     background: #f1f1f1;  
 }
 
-body::after {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 128px;
-    content: "";
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f1f1f1);
-    pointer-events: none;
-}
-
 /* HEADER */
 
 header {
@@ -48,7 +37,8 @@ header {
     box-sizing: border-box;
     background-color: var(--module-color-light);
     background-image: linear-gradient(to right bottom, var(--module-color-light), var(--module-color-dark));
-    padding-bottom: 15vw;
+    padding-bottom: 10vw;
+    z-index: -1;
 }
 
 header a {
@@ -68,12 +58,7 @@ header a:hover .logo {
 header .logo img {
     vertical-align: middle;
     width: 32px;
-    filter: var(--filter-shadow-white);
     transition: filter var(--animation-speed);
-}
-
-header a:hover .logo img {
-    filter: var(--filter-shadow-extra-black);
 }
 
 header .logo span {
@@ -96,6 +81,8 @@ header .navbar .link {
     transition: border-color var(--animation-speed), transform var(--animation-speed);
     vertical-align: middle;
     display: inline-block;
+    text-align: center;
+    min-width: 85px;
 }
 
 header .navbar a:hover .link {
@@ -103,32 +90,21 @@ header .navbar a:hover .link {
     transform: translateY(-8px)
 }
 
-.header-svg {
-    position: relative;
-    pointer-events: none;
-    transform: translateY(-2vw);
-}
-
-.header-svg svg {
-    vertical-align: top;
-}
-
 /* APPS */
 
 .apps {
-    margin-top: -8vw;
+    padding-top: 10vw;
 }
 
 .apps .app-row {
     display: flex;
     justify-content: center;
-    margin-bottom: 144px;
+    margin-bottom: 48px;
 }
 
 .apps .column {
     max-width: 574px;
     width: 100%;
-    text-align: center;
 }
 
 .apps .icon {
@@ -146,16 +122,7 @@ header .navbar a:hover .link {
 .apps h3 {
     font: 20px/30px "Inter"; 
     color: #000;
-    margin: 20px 32px;
-}
-
-.apps .screenshot {
-    filter: var(--filter-shadow-extra-black);
-    border-radius: 8px;
-    background: #333;
-    border: 2px solid rgba(0, 0, 0, 0.25);
-    max-width: 100%;
-    box-sizing: border-box;
+    margin: 16px;
 }
 
 .apps a {
@@ -164,7 +131,7 @@ header .navbar a:hover .link {
     font: 16px/24px "Inter"; 
     display: inline-block;
     vertical-align: middle;
-    margin: 0 8px;
+    margin: 8px 0 8px 16px;
 }
 
 .apps a:hover {
@@ -200,7 +167,7 @@ main .content {
     padding: 32px;
     filter: var(--filter-shadow-black);
     background: #fff;
-    max-width: 570px;
+    max-width: 580px;
     width: 100%;
     font: 16px/24px "Inter";
     text-align: left;
@@ -315,28 +282,23 @@ footer a:hover {
 
 /* MEDIA */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
+    header {
+        padding-bottom: 32px;
+    }
+
     .apps {
-        padding: 0 16px;
-        margin-top: 0;
+        padding: 128px 16px 0 16px;
     }
 
     .apps .app-row {
         flex-direction: column;
-        margin-bottom: 48px;
     }
 
     .apps .column {
         max-width: 100%;
-        margin-bottom: 32px;
-    }
-
-    .apps .screenshot {
-        display: none;
-    }
-
-    .header-svg {
-        padding-top: 64px;
+        text-align: center;
+        margin-bottom: 48px;
     }
 }
 
@@ -347,10 +309,6 @@ footer a:hover {
 
     header .navbar {
         display: none;
-    }
-
-    .apps .column h3 {
-        margin: 16px 0;
     }
 
     main .donate a {
