@@ -1,0 +1,32 @@
+@import "../../assets/styles/variables.scss";
+
+.project-list {
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  list-style-type: none;
+  margin-bottom: 64px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 0 0 16px;
+
+    a, span, img {
+      vertical-align: middle;
+    }
+
+    .light {
+      color: $light-color;
+    }
+
+    img {
+      margin-right: 4px;
+    }
+  }
+}
