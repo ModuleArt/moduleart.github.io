@@ -1,0 +1,24 @@
+.global-header {
+  text-align: center;
+  margin: 40px 0;
+
+  .logo {
+    h1 {
+      font: 48px/64px "Pacifico";
+      margin: 0;
+      color: #38F;
+    }
+  }
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+      padding: 0 8px;
+    }
+  }
+}

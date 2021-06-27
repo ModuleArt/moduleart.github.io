@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url('../../assets/fonts/Pacifico.ttf');
+}
+
+body {
+  font: 18px -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  color: #111;
+  margin: 0;
+}
+
+main {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #38F;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+
+  &:hover {
+    border-bottom: 2px solid #38f;
+  }
+}
