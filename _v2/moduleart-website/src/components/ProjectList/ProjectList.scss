@@ -9,10 +9,6 @@
   list-style-type: none;
   margin-bottom: 40px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &__title {
     font-size: 22px;
     margin: 0 0 16px;
@@ -34,11 +30,15 @@
     overflow: hidden;
     display: block;
     background: #D0E5F5;
+    height: 240px;
 
     img {
       cursor: pointer;
       transition: transform .25s;
       vertical-align: top;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     &:hover img {

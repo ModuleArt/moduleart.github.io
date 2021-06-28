@@ -1,0 +1,13 @@
+.global-menu {
+  ul {
+    padding: 0;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 0 8px;
+  }
+}

@@ -14,7 +14,7 @@
           /></a>
       </h2>
       <a class="project__image">
-        <img :src="getProjectImage(project.image)" :alt="project.title" />
+        <img v-if="project.image" :src="getProjectImage(project.image)" :alt="project.title" />
       </a>
     </li>
   </ul>
@@ -37,7 +37,7 @@ export default {
         {
           title: "Qsnip",
           url: "https://moduleart.github.io/qsnip",
-          image: "qsnip.png",
+          image: null,
           platforms: [
             "windows",
             "mac",
