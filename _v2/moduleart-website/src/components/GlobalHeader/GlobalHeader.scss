@@ -2,17 +2,16 @@
   text-align: center;
   margin: 40px 0;
 
-  .logo {
+  &__logo {
     h1 {
       font: 48px/64px "Pacifico";
       margin: 0;
-      color: #38F;
     }
   }
 
-  .menu {
+  &__menu {
     padding: 0;
-    margin: 0;
+    margin: 8px 0;
     display: flex;
     justify-content: center;
 

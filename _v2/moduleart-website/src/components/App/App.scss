@@ -1,3 +1,5 @@
+@import "../../assets/styles/variables.scss";
+
 @font-face {
   font-family: "Pacifico";
   src: url('../../assets/fonts/Pacifico.ttf');
@@ -21,12 +23,23 @@ main {
 }
 
 a {
-  color: #38F;
+  color: $link-color;
   text-decoration: none;
   position: relative;
   font-weight: 500;
 
-  &:hover {
-    border-bottom: 2px solid #38f;
+  &:not(.NO_ANIM)::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: $link-color;
+    transition: width .25s;
+  }
+
+  &:not(.NO_ANIM):hover::after {
+    width: 100%;
   }
 }

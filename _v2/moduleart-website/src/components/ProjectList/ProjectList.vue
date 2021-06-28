@@ -1,7 +1,7 @@
 <template>
   <ul class="project-list">
     <li v-for="(project, projectIndex) in projects" :key="projectIndex" class="project">
-      <h2>
+      <h2 class="project__title">
         <a :href="project.url">
           <span>{{ project.title }}</span>
           <span class="light"> for </span>
@@ -10,11 +10,12 @@
             :key="platformIndex"
             :src="getPlatformImage(platform)" 
             :alt="platform"
+            :title="platform"
           /></a>
       </h2>
-      <div class="image">
+      <a class="project__image">
         <img :src="getProjectImage(project.image)" :alt="project.title" />
-      </div>
+      </a>
     </li>
   </ul>
 </template>
@@ -39,7 +40,7 @@ export default {
           image: "qsnip.png",
           platforms: [
             "windows",
-            "macos",
+            "mac",
             "linux",
           ],
         },
