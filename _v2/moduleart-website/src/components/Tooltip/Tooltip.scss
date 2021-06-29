@@ -1,0 +1,40 @@
+@import "../../assets/styles/variables.scss";
+
+.tooltip {
+  position: relative;
+
+  &:hover {
+    .tooltip__text {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    background: $text-color;
+    color: $light-color;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 17px;
+    line-height: 17px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    pointer-events: none;
+    top: calc(-100% - 8px);
+    opacity: 0;
+    transition: opacity .25s, transform .25s;
+
+    &::before {
+      content: "";
+      width: 0; 
+      height: 0; 
+      top: 100%;
+      left: calc(50% - 8px);
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid $text-color;
+      position: absolute;
+    }
+  }
+}

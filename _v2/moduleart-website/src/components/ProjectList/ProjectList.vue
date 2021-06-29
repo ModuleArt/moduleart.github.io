@@ -5,13 +5,10 @@
         <a :href="project.url">
           <span>{{ project.title }}</span>
           <span class="light"> for </span>
-          <img 
-            v-for="(platform, platformIndex) in project.platforms"
-            :key="platformIndex"
-            :src="getPlatformImage(platform)" 
-            :alt="platform"
-            :title="platform"
-          /></a>
+          <tooltip class="project__platform" v-for="(platform, platformIndex) in project.platforms" :key="platformIndex" :text="platform">
+            <img :src="getPlatformImage(platform)" :alt="platform" />
+          </tooltip>
+        </a>
       </h2>
       <a class="project__image">
         <img v-if="project.image" :src="getProjectImage(project.image)" :alt="project.title" />
@@ -21,8 +18,13 @@
 </template>
 
 <script>
+import Tooltip from "../Tooltip/Tooltip.vue";
+
 export default {
   name: "ProjectList",
+  components: {
+    Tooltip,
+  },
   data() {
     return {
       projects: [

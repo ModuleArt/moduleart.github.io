@@ -21,9 +21,11 @@
       color: $light-color;
     }
 
-    img {
-      margin-right: 4px;
-    }
+    
+  }
+
+  &__platform {
+    display: inline;
   }
 
   &__image {
