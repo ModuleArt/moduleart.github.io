@@ -19,13 +19,13 @@
 
     .light {
       color: $light-color;
+      font-weight: 500;
     }
-
-    
   }
 
   &__platform {
     display: inline;
+    vertical-align: middle;
   }
 
   &__image {
