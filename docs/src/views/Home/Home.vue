@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home-view">
     <project-list />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import ProjectList from "../../components/ProjectList/ProjectList.vue";
 
 export default {
-  name: "Home",
+  name: "HomeView",
   components: {
     ProjectList,
   },

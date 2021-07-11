@@ -7,25 +7,29 @@
 
 .project {
   list-style-type: none;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 
   &__title {
     font-size: 22px;
     margin: 0 0 16px;
 
     a, span, img {
-      vertical-align: middle;
+      vertical-align: text-bottom;
     }
+  }
 
-    .light {
-      color: $light-color;
-      font-weight: 500;
-    }
+  &__info {
+    color: $light-color;
+    font-weight: 500;
+    cursor: default;
   }
 
   &__platform {
     display: inline;
-    vertical-align: middle;
+  }
+
+  &__status {
+    float: right;
   }
 
   &__image {
