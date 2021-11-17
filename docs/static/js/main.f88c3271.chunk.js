@@ -1,0 +1,2 @@
+(this.webpackJsonpstopwatch=this.webpackJsonpstopwatch||[]).push([[0],{11:function(t,e,c){"use strict";c.r(e);var n=c(1),s=c.n(n),r=c(3),a=c.n(r),o=(c(8),c(9),c(0)),i=function(){return Object(o.jsx)("header",{className:"header"})},j=function(){return Object(o.jsx)("div",{className:"app",children:Object(o.jsx)(i,{})})};a.a.render(Object(o.jsx)(s.a.StrictMode,{children:Object(o.jsx)(j,{})}),document.getElementById("root"))},8:function(t,e,c){},9:function(t,e,c){}},[[11,1,2]]]);
+//# sourceMappingURL=main.f88c3271.chunk.js.map
