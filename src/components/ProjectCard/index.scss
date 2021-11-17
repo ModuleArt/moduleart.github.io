@@ -1,3 +1,34 @@
+@import "../../assets/scss/variables.scss";
+
 .project-card {
-  background: #eee;
+  &__title {
+    margin-bottom: 8px;
+
+    & > a {
+      text-decoration: none;
+      color: $accent-color;
+    }
+  }
+
+  &__platform {
+    color: $second-color;
+  }
+
+  &__image {
+    display: block;
+    overflow: hidden;
+    background: $accent-color-pale;
+    
+    & > img {
+      width: 100%;
+      vertical-align: top;
+      transition: transform $animation-duration;
+    }
+
+    &:hover {
+      & > img {
+        transform: translateY(16px);
+      }
+    }
+  }
 }

@@ -1,4 +1,9 @@
 .app {
-  max-width: 600px;
+  max-width: 632px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 0 16px;
 }

@@ -1,0 +1,12 @@
+@import "../../assets/scss/variables.scss";
+
+.footer {
+  text-align: center;
+  padding: 16px 0;
+  margin: 64px 0 0;
+
+  &__copyright {
+    color: $second-color;
+    font-size: 14px;
+  }
+}

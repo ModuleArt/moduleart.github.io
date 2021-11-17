@@ -9,9 +9,12 @@ const ProjectsList: FunctionComponent<Props> = ({ projects }) => {
       {projects.map((project, index) => {
         return (
           <ProjectCard
+            key={ index }
+            className="projects-list__project"
             title={project.title}
             href={project.href}
-            imageUrl={project.imageUrl}
+            image={project.image}
+            platform={project.platform}
           />
         );
       })}

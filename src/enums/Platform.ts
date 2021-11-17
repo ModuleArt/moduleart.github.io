@@ -1,6 +1,6 @@
 enum Platform {
-  win = "WINDOWS",
-  mac = "MACOS",
+  win = "Win",
+  mac = "Mac",
 }
 
 export default Platform;
