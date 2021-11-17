@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables.scss";
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: $accent-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $accent-color;
+    transition: width $animation-duration;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
