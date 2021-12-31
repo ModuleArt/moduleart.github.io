@@ -4,6 +4,7 @@ import MainConfig from "../interfaces/MainConfig";
 import QpvImage from "../assets/images/projects/quick-picture-viewer.png";
 
 const mainConfig: MainConfig = {
+  title: "Module Art",
   projects: [
     {
       title: "Quick Picture Viewer",
@@ -19,6 +20,13 @@ const mainConfig: MainConfig = {
       githubUrl: "https://github.com/quick-picture-viewer",
       platform: Platform.mac,
     },
+    {
+      title: "Quick Color Picker",
+      href: "/quick-color-picker",
+      image: "https://github.com/ModuleArt/quick-color-picker/raw/v2/docs/screenshots/main.png",
+      githubUrl: "https://github.com/quick-color-picker",
+      platform: Platform.win,
+    }
   ],
 };
 

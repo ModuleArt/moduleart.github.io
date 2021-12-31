@@ -3,13 +3,12 @@
 .project-card {
   &__title {
     margin-bottom: $size-md;
+  }
 
-    & > a {
-      text-decoration: none;
-      color: $accent-color;
-      font-weight: 500;
-      font-size: 20px;
-    }
+  &__text {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
   }
 
   &__platform {
@@ -24,7 +23,7 @@
     background: $accent-color-pale;
     border-radius: $size-md;
     box-shadow: $shadow-md;
-    transition: box-shadow $animation-duration;
+    transition: box-shadow $transition-duration;
 
     & > img {
       width: 100%;
@@ -35,11 +34,13 @@
       object-position: top;
     }
 
-    &:hover {
-      box-shadow: $shadow-lg;
+    &--clickable {
+      &:hover {
+        box-shadow: $shadow-lg;
 
-      & > img {
-        transform: translateY(16px);
+        & > img {
+          transform: translateY(16px);
+        }
       }
     }
   }

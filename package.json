@@ -11,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
+    "react-slotify": "^0.1.7",
     "typescript": "^4.4.4"
   },
   "scripts": {

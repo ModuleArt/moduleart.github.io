@@ -7,26 +7,33 @@ import Footer from "../Footer";
 import HomePage from "../../pages/HomePage";
 import ProjectPage from "../../pages/ProjectPage";
 import NotFoundPage from "../../pages/NotFoundPage";
+import WidthLimiter, { WidthLimiterSlot } from "../../components/WidthLimiter";
 import "./index.scss";
 
 const App: FunctionComponent = () => {
   return (
     <div className="app">
-      <Header />
-      <Routes>
-        <Route path="*" element={<NotFoundPage />} />
-        <Route path="/" element={<HomePage />} />
-        {MainConfig.projects.map((project, projectIndex) => {
-          return (
-            <Route
-              key={projectIndex}
-              path="/quick-picture-viewer"
-              element={<ProjectPage project={project} />}
-            />
-          );
-        })}
-      </Routes>
-      <Footer />
+      <WidthLimiter className="app__container">
+        <WidthLimiterSlot>
+          <Header />
+          <div className="app__page">
+            <Routes>
+              <Route path="*" element={<NotFoundPage />} />
+              <Route path="/" element={<HomePage />} />
+              {MainConfig.projects.map((project, projectIndex) => {
+                return (
+                  <Route
+                    key={projectIndex}
+                    path={project.href}
+                    element={<ProjectPage project={project} />}
+                  />
+                );
+              })}
+            </Routes>
+          </div>
+          <Footer />
+        </WidthLimiterSlot>
+      </WidthLimiter>
     </div>
   );
 };

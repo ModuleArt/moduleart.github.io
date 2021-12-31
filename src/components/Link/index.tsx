@@ -1,18 +1,38 @@
-import "./index.scss";
 import { FunctionComponent } from "react";
-import Props from "./Props";
 import { Link as RouterLink } from "react-router-dom";
+import cn from "classnames";
 
-const Link: FunctionComponent<Props> = ({ text, href, internal = false }) => {
+import Props from "./Props";
+import "./index.scss";
+
+const Link: FunctionComponent<Props> = ({
+  className = "",
+  text,
+  href,
+  internal = false,
+}) => {
   if (internal) {
     return (
-      <RouterLink className="link link--internal" to={href}>
+      <RouterLink
+        className={cn({
+          link: true,
+          "link--internal": true,
+          [className]: true,
+        })}
+        to={href}
+      >
         {text}
       </RouterLink>
     );
   } else {
     return (
-      <a className="link" href={href}>
+      <a
+        className={cn({
+          link: true,
+          [className]: true,
+        })}
+        href={href}
+      >
         {text}
       </a>
     );

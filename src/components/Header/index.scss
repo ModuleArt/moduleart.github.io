@@ -2,11 +2,18 @@
 
 .header {
   text-align: center;
-  padding: 32px 0;
+  padding: $size-xl 0;
 
   &__logo {
     font: 42px/150% Pacifico;
     color: $accent-color;
+    text-decoration: none;
+
+    &--link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__links {

@@ -1,0 +1,7 @@
+@import "../../assets/scss/variables.scss";
+
+.width-limiter {
+  max-width: 632px;
+  margin: 0 auto;
+  padding: 0 $size-lg;
+}
