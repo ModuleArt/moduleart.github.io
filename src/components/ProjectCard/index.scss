@@ -2,30 +2,42 @@
 
 .project-card {
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: $size-md;
 
     & > a {
       text-decoration: none;
       color: $accent-color;
+      font-weight: 500;
+      font-size: 20px;
     }
   }
 
   &__platform {
     color: $second-color;
+    font-weight: 500;
+    font-size: 20px;
   }
 
   &__image {
     display: block;
     overflow: hidden;
     background: $accent-color-pale;
-    
+    border-radius: $size-md;
+    box-shadow: $shadow-md;
+    transition: box-shadow $animation-duration;
+
     & > img {
       width: 100%;
       vertical-align: top;
-      transition: transform $animation-duration;
+      transition: transform $transition-duration;
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
     }
 
     &:hover {
+      box-shadow: $shadow-lg;
+
       & > img {
         transform: translateY(16px);
       }

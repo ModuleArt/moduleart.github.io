@@ -7,17 +7,17 @@ const mainConfig: MainConfig = {
   projects: [
     {
       title: "Quick Picture Viewer",
-      href: "https://moduleart.github.io/quick-picture-viewer",
+      href: "/quick-picture-viewer",
       image: QpvImage,
       githubUrl: "https://github.com/quick-picture-viewer",
       platform: Platform.win,
     },
     {
-      title: "Quick Color Picker",
-      href: "https://moduleart.github.io/quick-picture-viewer",
-      image: QpvImage,
+      title: "SzContext",
+      href: "/sz-context",
+      image: "https://github.com/RoadToDream/SzContext/raw/main/images/SzContextLight.png",
       githubUrl: "https://github.com/quick-picture-viewer",
-      platform: Platform.win,
+      platform: Platform.mac,
     },
   ],
 };

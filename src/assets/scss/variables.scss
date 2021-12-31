@@ -1,11 +1,23 @@
-// colors
-$accent-color-pale: #EDC9FD;
-$accent-color: #AA14F0;
+// color
+$accent-color: #0070f3;
+$accent-color-mid: #a7cefb;
+$accent-color-pale: #dfedfe;
 $second-color: #aaa;
 
-// durations
+// duration
 $transition-duration: 0.25s;
 $animation-duration: 0.5s;
 
-//opacity
+// opacity
 $disabled-opacity: 0.5;
+
+// size
+$size-sm: 4px; // small
+$size-md: 8px; // medium
+$size-lg: 16px; // large
+$size-xl: 32px; // extra large
+
+// shadow
+$shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1); // medium
+$shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.2); // large
+

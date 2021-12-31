@@ -1,6 +1,9 @@
-import "./index.scss";
 import { FunctionComponent } from "react";
+import { Link as RouterLink } from "react-router-dom";
+
 import Props from "./Props";
+import Link from "../Link";
+import "./index.scss";
 
 const ProjectCard: FunctionComponent<Props> = ({
   className,
@@ -12,14 +15,12 @@ const ProjectCard: FunctionComponent<Props> = ({
   return (
     <div className={"project-card " + className}>
       <h2 className="project-card__title">
-        <a href={href}>
-          {title}
-          <span className="project-card__platform"> for {platform}</span>
-        </a>
+        <Link text={title} href={href} internal />
+        <span className="project-card__platform"> for {platform}</span>
       </h2>
-      <a className="project-card__image" href={href}>
+      <RouterLink className="project-card__image" to={href}>
         <img src={image} alt={title} />
-      </a>
+      </RouterLink>
     </div>
   );
 };

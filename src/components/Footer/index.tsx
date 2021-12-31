@@ -5,7 +5,7 @@ const Footer: FunctionComponent = () => {
   return (
     <footer className="footer">
       <span className="footer__copyright">
-        Copyright © 2021 Connection Beats. All rights reserved.
+        Copyright © 2022 Module Art. All rights reserved.
       </span>
     </footer>
   );

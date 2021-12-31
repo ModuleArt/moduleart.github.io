@@ -8,10 +8,10 @@ const Header: FunctionComponent = () => {
       <h1 className="header__logo">Module Art</h1>
       <ul className="header__links">
         <li className="header__link">
-          <Link text="Quick Picture Viewer" href="" />
+          <Link text="About" href="/about" internal />
         </li>
         <li className="header__link">
-          <Link text="GitHub" href="" />
+          <Link text="GitHub" href="https://github.com/ModuleArt" />
         </li>
       </ul>
     </header>

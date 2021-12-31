@@ -1,7 +1,8 @@
-import "./index.scss";
 import { FunctionComponent } from "react";
+
 import Props from "./Props";
 import ProjectCard from "../ProjectCard";
+import "./index.scss";
 
 const ProjectsList: FunctionComponent<Props> = ({ projects }) => {
   return (

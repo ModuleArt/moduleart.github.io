@@ -9,17 +9,20 @@
   &::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 0;
-    width: 0;
-    height: 2px;
-    background: $accent-color;
-    transition: width $animation-duration;
+    width: 100%;
+    height: 0;
+    background: $accent-color-pale;
+    transition: height $transition-duration, top $transition-duration;;
+    z-index: -1;
+    border-radius: $size-md;
   }
 
   &:hover {
     &::before {
-      width: 100%;
+      top: 0;
+      height: 100%;
     }
   }
 }

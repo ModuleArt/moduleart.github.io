@@ -1,3 +1,5 @@
+@import "../../assets/scss/variables.scss";
+
 .app {
   max-width: 632px;
   margin: 0 auto;
@@ -5,5 +7,5 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 $size-lg;
 }
