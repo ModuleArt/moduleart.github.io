@@ -11,14 +11,12 @@ const ProjectCard: FunctionComponent<Props> = ({
   href = null,
   image,
   platform,
-  fullHeight = false,
 }) => {
   return (
     <div
       className={cn({
         "project-card": true,
         "project-card--clickable": href,
-        "project-card--full-height": fullHeight,
         [className]: true,
       })}
     >

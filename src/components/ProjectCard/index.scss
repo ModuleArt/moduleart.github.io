@@ -20,7 +20,7 @@
     display: block;
     overflow: hidden;
     background: $color-substrate;
-    border-radius: $size-md;
+    border-radius: $size-lg;
     position: relative;
     height: 280px;
   }
@@ -29,26 +29,14 @@
     position: absolute;
     left: 50px;
     width: calc(100% - 100px);
-    vertical-align: top;
     top: 100px;
     transition: top $duration-t, box-shadow $duration-t;
-    border-radius: $size-sm;
+    border-radius: $size-md;
     box-shadow: $shadow-lg;
   }
 
-  &--clickable &__tile:hover &__image,
-  &--full-height &__image {
+  &--clickable &__tile:hover &__image {
     top: 50px;
     box-shadow: $shadow-xl;
-  }
-
-  &--full-height &__tile {
-    height: auto;
-    padding: 50px;
-  }
-
-  &--full-height &__image {
-    position: initial;
-    width: 100%;
   }
 }

@@ -6,7 +6,6 @@ interface Props {
   href?: string;
   image: string;
   platform: Platform;
-  fullHeight?: boolean;
 }
 
 export default Props;

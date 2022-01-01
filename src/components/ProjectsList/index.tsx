@@ -14,7 +14,7 @@ const ProjectsList: FunctionComponent<Props> = ({ projects }) => {
             className="projects-list__project"
             title={project.title}
             href={project.href}
-            image={project.image}
+            image={project.images[0]}
             platform={project.platform}
           />
         );
