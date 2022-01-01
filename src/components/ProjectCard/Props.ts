@@ -5,7 +5,8 @@ interface Props {
   title: string;
   href?: string;
   image: string;
-  platform: Platform
+  platform: Platform;
+  fullHeight?: boolean;
 }
 
 export default Props;

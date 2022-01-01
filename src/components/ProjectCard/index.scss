@@ -2,46 +2,55 @@
 
 .project-card {
   &__title {
-    margin-bottom: $size-md;
+    margin-bottom: $size-lg;
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-lg;
   }
 
   &__text {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    margin-right: $size-md;
   }
 
   &__platform {
-    color: $second-color;
-    font-weight: 500;
-    font-size: 20px;
+    color: $color-secondary;
+    font-weight: 400;
+  }
+
+  &__tile {
+    display: block;
+    overflow: hidden;
+    background: $color-substrate;
+    border-radius: $size-md;
+    position: relative;
+    height: 280px;
   }
 
   &__image {
-    display: block;
-    overflow: hidden;
-    background: $accent-color-pale;
-    border-radius: $size-md;
-    box-shadow: $shadow-md;
-    transition: box-shadow $transition-duration;
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    vertical-align: top;
+    top: 100px;
+    transition: top $duration-t, box-shadow $duration-t;
+    border-radius: 4px;
+    box-shadow: $shadow-lg;
+  }
 
-    & > img {
-      width: 100%;
-      vertical-align: top;
-      transition: transform $transition-duration;
-      height: 280px;
-      object-fit: cover;
-      object-position: top;
-    }
+  &--clickable &__tile:hover &__image,
+  &--full-height &__image {
+    top: 50px;
+    box-shadow: $shadow-xl;
+  }
 
-    &--clickable {
-      &:hover {
-        box-shadow: $shadow-lg;
+  &--full-height &__tile {
+    height: auto;
+    padding: 50px;
+  }
 
-        & > img {
-          transform: translateY(16px);
-        }
-      }
-    }
+  &--full-height &__image {
+    position: initial;
+    width: 100%;
   }
 }

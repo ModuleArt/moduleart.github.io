@@ -1,23 +1,25 @@
 // color
-$accent-color: #0070f3;
-$accent-color-mid: #a7cefb;
-$accent-color-pale: #dfedfe;
-$second-color: #aaa;
+$color-primary: #007aff; // Apple systemBlue light
+$color-secondary: #c7c7cc; // Apple systemGray3 light
+$color-substrate: #f2f2f7; // Apple systemGray6 light
+$color-text: #1c1c1e; // Apple systemGray6 dark
 
 // duration
-$transition-duration: 0.25s;
-$animation-duration: 0.5s;
-
-// opacity
-$disabled-opacity: 0.5;
+$duration-t: 0.25s; // for transitions
 
 // size
 $size-sm: 4px; // small
 $size-md: 8px; // medium
 $size-lg: 16px; // large
 $size-xl: 32px; // extra large
+$size-mx: 64px; // maximum
+
+// font size
+$font-size-sm: 14px;
+$font-size-md: 18px;
+$font-size-lg: 24px;
 
 // shadow
 $shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1); // medium
-$shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.2); // large
-
+$shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.25); // large
+$shadow-xl: 0 16px 32px 0 rgba(0, 0, 0, 0.5); // extra large

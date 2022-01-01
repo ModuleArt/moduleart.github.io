@@ -1,8 +1,8 @@
-.projects-list {
-  padding: 32px 0;
+@import "../../assets/scss/variables.scss";
 
+.projects-list {
   &__project {
-    margin-bottom: 64px;
+    margin-bottom: $size-mx;
 
     &:last-child {
       margin-bottom: 0;

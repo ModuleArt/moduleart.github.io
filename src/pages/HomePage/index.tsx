@@ -1,12 +1,15 @@
 import { FunctionComponent } from "react";
+import DocumentTitle from "react-document-title";
 
 import ProjectList from "../../components/ProjectsList";
-import MainConfig from "../../config/Main";
+import mainConfig from "../../config/Main";
 
 const HomePage: FunctionComponent = () => {
   return (
     <div className="home-page">
-      <ProjectList projects={MainConfig.projects} />
+      <DocumentTitle title={mainConfig.title}>
+        <ProjectList projects={mainConfig.projects} />
+      </DocumentTitle>
     </div>
   );
 };

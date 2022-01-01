@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import MainConfig from "../../config/Main";
+import mainConfig from "../../config/Main";
 import Header from "../Header";
 import Footer from "../Footer";
 import HomePage from "../../pages/HomePage";
@@ -20,7 +20,7 @@ const App: FunctionComponent = () => {
             <Routes>
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/" element={<HomePage />} />
-              {MainConfig.projects.map((project, projectIndex) => {
+              {mainConfig.projects.map((project, projectIndex) => {
                 return (
                   <Route
                     key={projectIndex}

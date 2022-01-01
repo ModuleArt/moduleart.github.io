@@ -21,7 +21,7 @@ const Link: FunctionComponent<Props> = ({
         })}
         to={href}
       >
-        {text}
+        <span className="link__text">{text}</span>
       </RouterLink>
     );
   } else {
@@ -33,7 +33,7 @@ const Link: FunctionComponent<Props> = ({
         })}
         href={href}
       >
-        {text}
+        <span className="link__text">{text}</span>
       </a>
     );
   }

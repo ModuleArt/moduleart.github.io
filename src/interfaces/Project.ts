@@ -2,6 +2,7 @@ import Platform from "../enums/Platform";
 
 interface Project {
   title: string;
+  shortDescription: string;
   href: string;
   image: string;
   githubUrl: string;

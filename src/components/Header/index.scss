@@ -5,13 +5,33 @@
   padding: $size-xl 0;
 
   &__logo {
-    font: 42px/150% Pacifico;
-    color: $accent-color;
+    color: $color-primary;
     text-decoration: none;
+    position: relative;
+    display: inline-block;
 
-    &--link {
-      &:hover {
-        text-decoration: underline;
+    h1, span {
+      font: 42px/150% Pacifico;
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      left: 0;
+      bottom: $size-sm;
+      height: $size-sm;
+      width: 0;
+      background-color: $color-primary;
+      position: absolute;
+      border-radius: 2px;
+      opacity: 0;
+      transition: width $duration-t, opacity $duration-t;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
       }
     }
   }
@@ -20,9 +40,10 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: $size-md;
   }
 
   &__link {
-    margin: 0 8px;
+    margin: 0 $size-md;
   }
 }
