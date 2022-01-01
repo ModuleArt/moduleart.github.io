@@ -14,24 +14,23 @@
   &::before {
     content: "";
     position: absolute;
-    top: calc(100% - $size-sm);
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: $size-xs;
     border-radius: 1px;
     background: $color-primary;
     opacity: 0;
-    transition: top $duration-t, opacity $duration-t;
+    transition: opacity $duration-t;
   }
 
   &:hover &__text {
-    transform: translateY(-2px);
+    transform: translateY(-$size-xs);
   }
 
   &:hover {
     &::before {
       opacity: 1;
-      top: calc(100% - 2px);
     }
   }
 }

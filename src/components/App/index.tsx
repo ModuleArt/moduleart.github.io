@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Snow } from "react-snow-particle";
 
 import mainConfig from "../../config/Main";
 import Header from "../Header";
@@ -34,6 +35,9 @@ const App: FunctionComponent = () => {
           <Footer />
         </WidthLimiterSlot>
       </WidthLimiter>
+      <div className="app__effects">
+        <Snow size="8px"/>
+      </div>
     </div>
   );
 };

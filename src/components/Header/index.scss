@@ -10,27 +10,33 @@
     position: relative;
     display: inline-block;
 
-    h1, span {
+    h1,
+    span {
       font: 42px/150% Pacifico;
       display: block;
+      transition: transform $duration-t;
     }
 
     &::after {
       content: "";
       left: 0;
-      bottom: $size-sm;
+      bottom: $size-md;
       height: $size-sm;
-      width: 0;
+      width: 100%;
       background-color: $color-primary;
       position: absolute;
-      border-radius: 2px;
+      border-radius: $size-xs;
       opacity: 0;
-      transition: width $duration-t, opacity $duration-t;
+      transition: opacity $duration-t;
     }
 
-    &:hover {
+    &--clickable:hover {
+      h1,
+      span {
+        transform: translateY(-$size-md);
+      }
+
       &::after {
-        width: 100%;
         opacity: 1;
       }
     }

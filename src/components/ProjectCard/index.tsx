@@ -23,8 +23,8 @@ const ProjectCard: FunctionComponent<Props> = ({
       })}
     >
       <h2 className="project-card__title">
-        <span className="project-card__text">{title}</span>
-        <span className="project-card__platform"> for {platform}</span>
+        <span className="project-card__text">{title} </span>
+        <span className="project-card__platform">for {platform}</span>
       </h2>
       {href ? (
         <RouterLink className="project-card__tile" to={href}>

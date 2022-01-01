@@ -8,6 +8,7 @@ $color-text: #1c1c1e; // Apple systemGray6 dark
 $duration-t: 0.25s; // for transitions
 
 // size
+$size-xs: 2px; // extra small
 $size-sm: 4px; // small
 $size-md: 8px; // medium
 $size-lg: 16px; // large
@@ -15,9 +16,9 @@ $size-xl: 32px; // extra large
 $size-mx: 64px; // maximum
 
 // font size
-$font-size-sm: 14px;
-$font-size-md: 18px;
-$font-size-lg: 24px;
+$font-size-sm: 14px; // small
+$font-size-md: 18px; // medium
+$font-size-lg: 24px; // large
 
 // shadow
 $shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1); // medium

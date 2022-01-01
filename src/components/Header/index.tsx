@@ -11,13 +11,15 @@ const Header: FunctionComponent = () => {
 
   return (
     <header className="header">
-      <RouterLink to="/" className="header__logo">
-        {location.pathname === "/" ? (
+      {location.pathname === "/" ? (
+        <div className="header__logo">
           <h1>{mainConfig.title}</h1>
-        ) : (
+        </div>
+      ) : (
+        <RouterLink to="/" className="header__logo header__logo--clickable">
           <span>{mainConfig.title}</span>
-        )}
-      </RouterLink>
+        </RouterLink>
+      )}
       <ul className="header__links">
         <li className="header__link">
           <Link text="GitHub" href="https://github.com/ModuleArt" />

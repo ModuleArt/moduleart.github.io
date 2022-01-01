@@ -2,8 +2,8 @@
 
 .footer {
   text-align: center;
-  padding: 16px 0;
-  margin: 64px 0 0;
+  padding: $size-lg 0;
+  margin: $size-mx 0 0;
 
   &__copyright {
     color: $color-secondary;

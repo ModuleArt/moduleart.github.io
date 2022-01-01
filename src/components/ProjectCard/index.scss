@@ -3,14 +3,12 @@
 .project-card {
   &__title {
     margin-bottom: $size-lg;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: $font-size-lg;
   }
 
   &__text {
     font-weight: 600;
-    margin-right: $size-md;
   }
 
   &__platform {
@@ -34,7 +32,7 @@
     vertical-align: top;
     top: 100px;
     transition: top $duration-t, box-shadow $duration-t;
-    border-radius: 4px;
+    border-radius: $size-sm;
     box-shadow: $shadow-lg;
   }
 

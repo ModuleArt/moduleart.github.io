@@ -14,14 +14,15 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-slotify": "^0.1.7",
+    "react-snow-particle": "^1.0.6",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@types/react-document-title": "^2.0.5",
-    "@types/redux-logger": "^3.0.9",
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
+    "@types/react-document-title": "^2.0.5",
     "@types/react-dom": "^17.0.11",
+    "@types/redux-logger": "^3.0.9",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6"
   },
