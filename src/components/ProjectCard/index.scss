@@ -28,7 +28,7 @@
   &__image {
     position: absolute;
     left: $size-mx;
-    width: calc(100% - #{$size-mx * 2});
+    width: calc(100% - #{$size-mx2});
     top: 96px;
     transition: top $duration-t, box-shadow $duration-t;
     border-radius: $size-md;

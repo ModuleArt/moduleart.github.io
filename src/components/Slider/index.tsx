@@ -15,6 +15,7 @@ const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
         autoFocus
         showStatus={false}
         showIndicators={false}
+        thumbWidth={64}
         renderArrowNext={(clickHandler) => {
           return (
             <button

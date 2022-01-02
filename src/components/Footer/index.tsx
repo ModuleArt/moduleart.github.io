@@ -5,7 +5,7 @@ const Footer: FunctionComponent = () => {
   return (
     <footer className="footer">
       <span className="footer__copyright">
-        Copyright © 2022 Module Art. All rights reserved.
+        Copyright © {new Date().getFullYear()} Module Art. All rights reserved.
       </span>
     </footer>
   );

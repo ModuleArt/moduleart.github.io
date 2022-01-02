@@ -76,4 +76,22 @@
     color: $color-secondary;
     margin-top: $size-lg;
   }
+
+  &__tile-heading {
+    text-align: center;
+    margin: $size-mx2 0 $size-xl;
+    font-size: $font-size-xl;
+  }
+
+  &__release-name {
+    text-align: center;
+    margin: $size-lg 0;
+    font-weight: $font-weight-md;
+  }
+
+  &__tile {
+    padding: $size-mx;
+    background: $color-substrate;
+    border-radius: $size-lg;
+  }
 }

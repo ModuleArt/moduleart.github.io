@@ -43,7 +43,7 @@ const mainConfig: MainConfig = {
       githubPath: "RoadToDream/SzContext",
       platform: Platform.mac,
       os: "macOS 10.15+",
-      authorName: "DuanJiawei",
+      authorName: "Duan Jiawei",
       authorUrl: "https://github.com/RoadToDream",
     },
     // {

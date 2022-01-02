@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables.scss";
+
+.markdown-view {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: $size-xl 0 $size-md;
+  }
+
+  img {
+    margin: $size-xl 0;
+  }
+}

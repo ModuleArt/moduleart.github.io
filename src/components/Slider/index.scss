@@ -31,7 +31,7 @@
     cursor: pointer;
     background-color: #fff;
     z-index: 1;
-    box-shadow: $shadow-md;
+    box-shadow: $shadow-lg;
 
     &:hover {
       background-color: #fff;
@@ -43,7 +43,7 @@
 
     &--prev {
       left: -$size-xl;
-      transform: rotate(180deg);
+      background-image: url("../../assets/images/icons/chevron-left.svg");
     }
   }
 
@@ -69,36 +69,47 @@
         content: "";
         position: absolute;
         bottom: 0;
-        left: $size-md;
-        width: calc(100% - #{$size-lg});
-        height: $size-xs;
-        border-radius: 1px;
-        background: $color-primary;
+        left: calc(50% - #{($size-xs + $size-md) / 2});
+        width: $size-md;
+        height: $size-md;
+        border-radius: 50%;
+        background: #fff;
         opacity: 0;
         transition: opacity $duration-t, transform $duration-t;
-        top: calc(100% + #{$size-sm});
+        top: calc(100% - #{$size-xs + $size-md});
         pointer-events: none;
+        box-shadow: $shadow-lg;
+        border: $size-xs solid $color-primary;
       }
 
-      &:hover,
       &.selected {
-        border: none;
-
         &::before {
           opacity: 1;
           transform: translateY($size-sm);
         }
       }
 
+      &:hover,
+      &.selected {
+        border: none;
+
+        img.slider__image {
+          outline-offset: -1px;
+          outline: 2px solid $color-primary;
+          box-shadow: $shadow-xl;
+        }
+      }
+
       img.slider__image {
-        border-radius: $size-sm;
-        box-shadow: none;
+        border-radius: $size-md;
+        box-shadow: $shadow-lg;
         width: 100%;
+        transition: box-shadow $duration-t;
       }
     }
 
     .slider-wrapper {
-      padding-bottom: #{$size-mx * 2};
+      padding-bottom: $size-mx2;
       box-sizing: content-box;
       transition: height $duration-t;
     }
