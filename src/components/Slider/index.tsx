@@ -15,6 +15,26 @@ const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
         autoFocus
         showStatus={false}
         showIndicators={false}
+        renderArrowNext={(clickHandler) => {
+          return (
+            <button
+              className="slider__arrow slider__arrow--next"
+              onClick={clickHandler}
+            >
+              Next
+            </button>
+          );
+        }}
+        renderArrowPrev={(clickHandler) => {
+          return (
+            <button
+              className="slider__arrow slider__arrow--prev"
+              onClick={clickHandler}
+            >
+              Prev
+            </button>
+          );
+        }}
       >
         {images.map((image, imageIndex) => {
           return (

@@ -3,6 +3,7 @@ interface Props {
   text: string;
   href: string;
   internal?: boolean;
+  secondary?: boolean;
 }
 
 export default Props;

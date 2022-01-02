@@ -3,41 +3,41 @@
 .header {
   text-align: center;
   padding: $size-xl 0;
+  margin-bottom: $size-lg;
 
   &__logo {
     color: $color-primary;
     text-decoration: none;
-    position: relative;
     display: inline-block;
 
     h1,
     span {
-      font: 42px/150% Pacifico;
+      font: #{$size-xl}/ 150% Pacifico;
       display: block;
       transition: transform $duration-t;
-    }
+      transform: translateX(19px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: nonea;
 
-    &::after {
-      content: "";
-      left: 0;
-      bottom: $size-md;
-      height: $size-sm;
-      width: 100%;
-      background-color: $color-primary;
-      position: absolute;
-      border-radius: $size-xs;
-      opacity: 0;
-      transition: opacity $duration-t;
+      &::after {
+        content: "❤";
+        border-radius: $size-xs;
+        opacity: 0;
+        transition: opacity $duration-t;
+        margin-left: $size-md;
+      }
     }
 
     &--clickable:hover {
       h1,
       span {
-        transform: translateY(-$size-md);
-      }
+        transform: translateX(0);
 
-      &::after {
-        opacity: 1;
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }

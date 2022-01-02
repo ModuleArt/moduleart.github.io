@@ -7,9 +7,8 @@ import mainConfig from "../../config/Main";
 const HomePage: FunctionComponent = () => {
   return (
     <div className="home-page">
-      <DocumentTitle title={mainConfig.title}>
-        <ProjectList projects={mainConfig.projects} />
-      </DocumentTitle>
+      <DocumentTitle title={mainConfig.title} />
+      <ProjectList projects={mainConfig.projects} />
     </div>
   );
 };

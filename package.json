@@ -6,6 +6,7 @@
     "build": "BUILD_PATH='./docs' react-scripts build"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "classnames": "^2.3.1",
     "node-sass": "4.14.1",
     "react": "^17.0.2",

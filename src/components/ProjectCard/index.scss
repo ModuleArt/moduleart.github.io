@@ -8,12 +8,12 @@
   }
 
   &__text {
-    font-weight: 600;
+    font-weight: $font-weight-lg;
   }
 
   &__platform {
     color: $color-secondary;
-    font-weight: 400;
+    font-weight: $font-weight-sm;
   }
 
   &__tile {
@@ -22,21 +22,21 @@
     background: $color-substrate;
     border-radius: $size-lg;
     position: relative;
-    height: 280px;
+    height: 300px;
   }
 
   &__image {
     position: absolute;
-    left: 50px;
-    width: calc(100% - 100px);
-    top: 100px;
+    left: $size-mx;
+    width: calc(100% - #{$size-mx * 2});
+    top: 96px;
     transition: top $duration-t, box-shadow $duration-t;
     border-radius: $size-md;
     box-shadow: $shadow-lg;
   }
 
   &--clickable &__tile:hover &__image {
-    top: 50px;
+    top: $size-mx;
     box-shadow: $shadow-xl;
   }
 }

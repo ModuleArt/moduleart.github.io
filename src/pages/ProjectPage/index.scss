@@ -1,5 +1,79 @@
 @import "../../assets/scss/variables.scss";
 
 .project-page {
+  &__head {
+    text-align: center;
+  }
 
+  &__app-icon {
+    width: 128px;
+  }
+
+  &__title {
+    font-size: $font-size-mx;
+    margin: $size-xl 0;
+    font-weight: $font-weight-lg;
+  }
+
+  &__description {
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    padding: $size-mx;
+
+    & > * {
+      margin-right: $size-lg;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__button-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button-holder:hover &__button--primary {
+    box-shadow: $shadow-xl;
+    transform: translateY(-$size-md);
+  }
+
+  &__button {
+    border: none;
+    padding: $size-lg $size-xl;
+    display: flex;
+    align-items: center;
+    border-radius: $size-md;
+    cursor: pointer;
+    background: $color-substrate;
+    text-decoration: none;
+
+    img {
+      margin-right: $size-md;
+    }
+
+    &--primary {
+      background: $color-primary;
+      color: #fff;
+      box-shadow: $shadow-lg;
+      transition: box-shadow $duration-t, transform $duration-t;
+    }
+  }
+
+  &__button-version {
+    opacity: 0.5;
+    margin-left: $size-md;
+  }
+
+  &__button-label {
+    font-size: $font-size-sm;
+    color: $color-secondary;
+    margin-top: $size-lg;
+  }
 }
