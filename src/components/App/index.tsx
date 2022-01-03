@@ -8,6 +8,7 @@ import Footer from "../Footer";
 import HomePage from "../../pages/HomePage";
 import ProjectPage from "../../pages/ProjectPage";
 import NotFoundPage from "../../pages/NotFoundPage";
+import AboutPage from "../../pages/AboutPage";
 import WidthLimiter, { WidthLimiterSlot } from "../../components/WidthLimiter";
 import "./index.scss";
 
@@ -21,6 +22,7 @@ const App: FunctionComponent = () => {
             <Routes>
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
               {mainConfig.projects.map((project, projectIndex) => {
                 return (
                   <Route
@@ -36,7 +38,7 @@ const App: FunctionComponent = () => {
         </WidthLimiterSlot>
       </WidthLimiter>
       <div className="app__effects">
-        <Snow size="8px"/>
+        <Snow size="8px" />
       </div>
     </div>
   );

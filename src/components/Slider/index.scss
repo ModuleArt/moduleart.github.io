@@ -68,7 +68,6 @@
       &::before {
         content: "";
         position: absolute;
-        bottom: 0;
         left: calc(50% - #{($size-xs + $size-md) / 2});
         width: $size-md;
         height: $size-md;
@@ -76,7 +75,7 @@
         background: #fff;
         opacity: 0;
         transition: opacity $duration-t, transform $duration-t;
-        top: calc(100% - #{$size-xs + $size-md});
+        top: calc(100% - #{$size-lg});
         pointer-events: none;
         box-shadow: $shadow-lg;
         border: $size-xs solid $color-primary;
@@ -85,7 +84,7 @@
       &.selected {
         &::before {
           opacity: 1;
-          transform: translateY($size-sm);
+          transform: translateY(#{$size-xs + $size-md});
         }
       }
 

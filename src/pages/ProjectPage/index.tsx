@@ -2,54 +2,76 @@ import { FunctionComponent, useEffect, useState } from "react";
 import DocumentTitle from "react-document-title";
 import axios from "axios";
 
+import Platform from "../../enums/Platform";
 import { formatBytes } from "../../helpers/dataHelper";
 import Props from "./Props";
 import Slider from "../../components/Slider";
 import Loading from "../../components/Loading";
 import Link from "../../components/Link";
 import MarkdownView from "../../components/MarkdownView";
+import Contributors from "../../components/Contributors";
 import "./index.scss";
 
 import MicrosoftImage from "../../assets/images/icons/microsoft.svg";
 import AppleImage from "../../assets/images/icons/apple.svg";
 import GitHubImage from "../../assets/images/icons/github.svg";
 import TrelloImage from "../../assets/images/icons/trello.svg";
-import Platform from "../../enums/Platform";
 
 const ProjectPage: FunctionComponent<Props> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
-  const [githubData, setGithubData] = useState({
+  const [releaseData, setReleaseData] = useState({
     version: "",
     size: "",
     downloadUrl: "",
     releaseMd: "",
     releaseDate: "",
   });
+  const [contributors, setContributors] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://api.github.com/repos/${project.githubPath}/releases/latest`)
-      .then(({ data }) => {
-        const githubData = {
-          version: data.tag_name,
-          size: formatBytes(data.assets[0].size),
-          downloadUrl: data.assets[0].browser_download_url,
-          releaseMd: data.body,
-          releaseDate: new Date(data.published_at).toLocaleDateString("en-US", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-          }),
-        };
+    Promise.all([
+      axios
+        .get(
+          `https://api.github.com/repos/${project.githubPath}/releases/latest`
+        )
+        .then(({ data }) => {
+          const releaseData = {
+            version: data.tag_name,
+            size: formatBytes(data.assets[0].size),
+            downloadUrl: data.assets[0].browser_download_url,
+            releaseMd: data.body,
+            releaseDate: new Date(data.published_at).toLocaleDateString(
+              "en-US",
+              {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+              }
+            ),
+          };
 
-        if (githubData.version[0] !== "v") {
-          githubData.version = `v${githubData.version}`;
-        }
+          if (releaseData.version[0] !== "v") {
+            releaseData.version = `v${releaseData.version}`;
+          }
 
-        setGithubData(githubData);
-        setLoading(false);
-      })
-      .finally(() => {});
+          setReleaseData(releaseData);
+        }),
+      axios
+        .get(`https://api.github.com/repos/${project.githubPath}/contributors`)
+        .then(({ data }) => {
+          setContributors(
+            data.map((c: any) => {
+              return {
+                login: c.login,
+                profileUrl: c.html_url,
+                avatarUrl: c.avatar_url,
+              };
+            })
+          );
+        }),
+    ]).then(() => {
+      setLoading(false);
+    });
   }, []);
 
   return (
@@ -78,7 +100,7 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
             <div className="project-page__button-holder">
               <a
                 className="project-page__button project-page__button--primary"
-                href={githubData.downloadUrl}
+                href={releaseData.downloadUrl}
               >
                 <img
                   src={
@@ -90,11 +112,11 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
                 />
                 <span className="project-page__button-text">Download</span>
                 <span className="project-page__button-version">
-                  {githubData.version}
+                  {releaseData.version}
                 </span>
               </a>
               <span className="project-page__button-label">
-                {project.os}, {githubData.size}
+                {project.os}, {releaseData.size}
               </span>
             </div>
             {project.githubPath && (
@@ -124,11 +146,11 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
       {!isLoading && (
         <h4 className="project-page__release-name">
           <Link
-            href={`https://github.com/${project.githubPath}/releases/tag/${githubData.version}`}
-            text={`Release ${githubData.version}`}
+            href={`https://github.com/${project.githubPath}/releases/tag/${releaseData.version}`}
+            text={`Release ${releaseData.version}`}
           />
           <span className="project-page__release-date">
-            {` - ${githubData.releaseDate}`}
+            {` - ${releaseData.releaseDate}`}
           </span>
         </h4>
       )}
@@ -136,8 +158,12 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
         {isLoading ? (
           <Loading />
         ) : (
-          <MarkdownView markdown={githubData.releaseMd} />
+          <MarkdownView markdown={releaseData.releaseMd} />
         )}
+      </div>
+      <h2 className="project-page__tile-heading">Contributors:</h2>
+      <div className="project-page__tile">
+        {isLoading ? <Loading /> : <Contributors contributors={contributors} />}
       </div>
     </div>
   );

@@ -1,15 +1,19 @@
 import Platform from "../enums/Platform";
 import MainConfig from "../interfaces/MainConfig";
 
-import SzContextIcon from "../assets/images/projects/sz-context/icon.png";
-import SzContextImage1 from "../assets/images/projects/sz-context/1.png";
-import SzContextImage2 from "../assets/images/projects/sz-context/2.png";
-import SzContextImage3 from "../assets/images/projects/sz-context/3.png";
-import SzContextImage4 from "../assets/images/projects/sz-context/4.png";
-
 import QpvIcon from "../assets/images/projects/quick-picture-viewer/icon.png";
 import QpvImage1 from "../assets/images/projects/quick-picture-viewer/1.png";
 import QpvImage2 from "../assets/images/projects/quick-picture-viewer/2.png";
+
+// import SzContextIcon from "../assets/images/projects/sz-context/icon.png";
+// import SzContextImage1 from "../assets/images/projects/sz-context/1.png";
+// import SzContextImage2 from "../assets/images/projects/sz-context/2.png";
+// import SzContextImage3 from "../assets/images/projects/sz-context/3.png";
+// import SzContextImage4 from "../assets/images/projects/sz-context/4.png";
+
+import QcpIcon from "../assets/images/projects/quick-color-picker/icon.png";
+import QcpImage1 from "../assets/images/projects/quick-color-picker/1.png";
+import QcpImage2 from "../assets/images/projects/quick-color-picker/2.png";
 
 const mainConfig: MainConfig = {
   title: "Module Art",
@@ -29,36 +33,36 @@ const mainConfig: MainConfig = {
       authorUrl: "https://github.com/Beelink",
     },
     {
-      title: "SzContext",
+      title: "Quick Color Picker",
       shortDescription:
-        "Open files or folders using your favorite app from Finder® context menu",
-      href: "/sz-context",
-      appIcon: SzContextIcon,
-      images: [
-        SzContextImage1,
-        SzContextImage2,
-        SzContextImage3,
-        SzContextImage4,
-      ],
-      githubPath: "RoadToDream/SzContext",
-      platform: Platform.mac,
-      os: "macOS 10.15+",
-      authorName: "Duan Jiawei",
-      authorUrl: "https://github.com/RoadToDream",
+        "Lightweight desktop color picker and color editor utility for Windows",
+      href: "/quick-color-picker",
+      appIcon: QcpIcon,
+      images: [QcpImage1, QcpImage2],
+      githubPath: "ModuleArt/quick-color-picker",
+      platform: Platform.win,
+      os: "Windows 7+",
+      roadmapUrl: "https://trello.com/b/ocDxuOLf/quick-color-picker-v2",
+      authorName: "Eugene Volynko",
+      authorUrl: "https://github.com/Beelink",
     },
     // {
-    //   title: "Quick Color Picker",
+    //   title: "SzContext",
     //   shortDescription:
-    //     "Lightweight desktop color picker and color editor utility for Windows",
-    //   href: "/quick-color-picker",
-    //   appIcon:
-    //     "https://raw.githubusercontent.com/ModuleArt/quick-picture-viewer/master/quick-picture-viewer/resources/imgs/picture512.png",
+    //     "Open files or folders using your favorite app from Finder® context menu",
+    //   href: "/sz-context",
+    //   appIcon: SzContextIcon,
     //   images: [
-    //     "https://github.com/ModuleArt/quick-color-picker/raw/v2/docs/screenshots/main.png",
+    //     SzContextImage1,
+    //     SzContextImage2,
+    //     SzContextImage3,
+    //     SzContextImage4,
     //   ],
-    //   githubUrl: "https://github.com/quick-color-picker",
-    //   platform: Platform.win,
-    //   os: "Windows 7+",
+    //   githubPath: "RoadToDream/SzContext",
+    //   platform: Platform.mac,
+    //   os: "macOS 10.15+",
+    //   authorName: "Duan Jiawei",
+    //   authorUrl: "https://github.com/RoadToDream",
     // },
   ],
 };

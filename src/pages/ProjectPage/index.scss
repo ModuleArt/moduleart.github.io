@@ -1,4 +1,5 @@
 @import "../../assets/scss/variables.scss";
+@import "../../assets/scss/animations.scss";
 
 .project-page {
   &__head {
@@ -24,6 +25,8 @@
     display: flex;
     justify-content: center;
     padding: $size-mx;
+    animation-name: mount-slide;
+    animation-duration: $duration-t;
 
     & > * {
       margin-right: $size-lg;

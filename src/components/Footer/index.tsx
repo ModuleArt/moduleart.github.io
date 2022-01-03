@@ -1,5 +1,6 @@
-import "./index.scss";
 import { FunctionComponent } from "react";
+
+import "./index.scss";
 
 const Footer: FunctionComponent = () => {
   return (

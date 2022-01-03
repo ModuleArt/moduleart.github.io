@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables.scss";
+
+.not-found-page {
+  text-align: center;
+
+  &__heading {
+    font-size: $font-size-mx;
+    font-weight: $font-weight-lg;
+  }
+
+  &__text {
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+    margin-top: $size-xl;
+  }
+}

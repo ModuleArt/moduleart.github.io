@@ -21,22 +21,20 @@
     overflow: hidden;
     background: $color-substrate;
     border-radius: $size-lg;
-    position: relative;
     height: 300px;
+    padding: #{$size-mx + $size-xl} $size-mx 0;
+    text-align: center;
   }
 
   &__image {
-    position: absolute;
-    left: $size-mx;
-    width: calc(100% - #{$size-mx2});
-    top: 96px;
-    transition: top $duration-t, box-shadow $duration-t;
+    max-width: 100%;
+    transition: box-shadow $duration-t, transform $duration-t;
     border-radius: $size-md;
     box-shadow: $shadow-lg;
   }
 
   &--clickable &__tile:hover &__image {
-    top: $size-mx;
+    transform: translateY(-$size-xl);
     box-shadow: $shadow-xl;
   }
 }

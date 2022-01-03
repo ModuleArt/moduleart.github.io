@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -22,5 +24,16 @@
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+
+@keyframes mount-slide {
+  from {
+    transform: translateY(-$size-lg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

@@ -1,0 +1,10 @@
+@import "../../assets/scss/variables.scss";
+
+.about-page {
+  text-align: center;
+
+  &__heading {
+    font-size: $font-size-mx;
+    font-weight: $font-weight-lg;
+  }
+}
