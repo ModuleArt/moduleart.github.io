@@ -1,6 +1,6 @@
 {
-  "name": "stopwatch",
-  "version": "0.1.0",
+  "name": "moduleart-website",
+  "version": "3.0.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "BUILD_PATH='./docs' react-scripts build"

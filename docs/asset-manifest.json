@@ -1,20 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/static/js/main.f88c3271.chunk.js",
-    "main.js.map": "/static/js/main.f88c3271.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0d3faed5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0d3faed5.js.map",
-    "static/js/2.eae69132.chunk.js": "/static/js/2.eae69132.chunk.js",
-    "static/js/2.eae69132.chunk.js.map": "/static/js/2.eae69132.chunk.js.map",
+    "main.css": "/static/css/main.51c666ff.chunk.css",
+    "main.js": "/static/js/main.af0ed61a.chunk.js",
+    "main.js.map": "/static/js/main.af0ed61a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f47e6bdc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f47e6bdc.js.map",
+    "static/css/2.22878783.chunk.css": "/static/css/2.22878783.chunk.css",
+    "static/js/2.9b8f888b.chunk.js": "/static/js/2.9b8f888b.chunk.js",
+    "static/js/2.9b8f888b.chunk.js.map": "/static/js/2.9b8f888b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ea1455b2.chunk.css.map": "/static/css/main.ea1455b2.chunk.css.map",
-    "static/js/2.eae69132.chunk.js.LICENSE.txt": "/static/js/2.eae69132.chunk.js.LICENSE.txt"
+    "static/css/2.22878783.chunk.css.map": "/static/css/2.22878783.chunk.css.map",
+    "static/css/main.51c666ff.chunk.css.map": "/static/css/main.51c666ff.chunk.css.map",
+    "static/js/2.9b8f888b.chunk.js.LICENSE.txt": "/static/js/2.9b8f888b.chunk.js.LICENSE.txt",
+    "static/media/1.8f71afd8.png": "/static/media/1.8f71afd8.png",
+    "static/media/1.b4982d7f.png": "/static/media/1.b4982d7f.png",
+    "static/media/2.99dbab0d.png": "/static/media/2.99dbab0d.png",
+    "static/media/2.dd32dd35.png": "/static/media/2.dd32dd35.png",
+    "static/media/fonts.scss": "/static/media/Pacifico.93cd59ff.ttf",
+    "static/media/apple.b719f811.svg": "/static/media/apple.b719f811.svg",
+    "static/media/index.scss": "/static/media/chevron-right.d5ca0f6b.svg",
+    "static/media/github.e1a3d46b.svg": "/static/media/github.e1a3d46b.svg",
+    "static/media/icon.283fd8e7.png": "/static/media/icon.283fd8e7.png",
+    "static/media/icon.5821537d.png": "/static/media/icon.5821537d.png",
+    "static/media/microsoft.dcf5e54a.svg": "/static/media/microsoft.dcf5e54a.svg",
+    "static/media/trello.bdb49fea.svg": "/static/media/trello.bdb49fea.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d3faed5.js",
-    "static/js/2.eae69132.chunk.js",
-    "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.f88c3271.chunk.js"
+    "static/js/runtime-main.f47e6bdc.js",
+    "static/css/2.22878783.chunk.css",
+    "static/js/2.9b8f888b.chunk.js",
+    "static/css/main.51c666ff.chunk.css",
+    "static/js/main.af0ed61a.chunk.js"
   ]
 }
