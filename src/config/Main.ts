@@ -5,11 +5,11 @@ import QpvIcon from "../assets/images/projects/quick-picture-viewer/icon.png";
 import QpvImage1 from "../assets/images/projects/quick-picture-viewer/1.png";
 import QpvImage2 from "../assets/images/projects/quick-picture-viewer/2.png";
 
-// import SzContextIcon from "../assets/images/projects/sz-context/icon.png";
-// import SzContextImage1 from "../assets/images/projects/sz-context/1.png";
-// import SzContextImage2 from "../assets/images/projects/sz-context/2.png";
-// import SzContextImage3 from "../assets/images/projects/sz-context/3.png";
-// import SzContextImage4 from "../assets/images/projects/sz-context/4.png";
+import SzContextIcon from "../assets/images/projects/sz-context/icon.png";
+import SzContextImage1 from "../assets/images/projects/sz-context/1.png";
+import SzContextImage2 from "../assets/images/projects/sz-context/2.png";
+import SzContextImage3 from "../assets/images/projects/sz-context/3.png";
+import SzContextImage4 from "../assets/images/projects/sz-context/4.png";
 
 import QcpIcon from "../assets/images/projects/quick-color-picker/icon.png";
 import QcpImage1 from "../assets/images/projects/quick-color-picker/1.png";
@@ -46,24 +46,24 @@ const mainConfig: MainConfig = {
       authorName: "Eugene Volynko",
       authorUrl: "https://github.com/Beelink",
     },
-    // {
-    //   title: "SzContext",
-    //   shortDescription:
-    //     "Open files or folders using your favorite app from Finder® context menu",
-    //   href: "/sz-context",
-    //   appIcon: SzContextIcon,
-    //   images: [
-    //     SzContextImage1,
-    //     SzContextImage2,
-    //     SzContextImage3,
-    //     SzContextImage4,
-    //   ],
-    //   githubPath: "RoadToDream/SzContext",
-    //   platform: Platform.mac,
-    //   os: "macOS 10.15+",
-    //   authorName: "Duan Jiawei",
-    //   authorUrl: "https://github.com/RoadToDream",
-    // },
+    {
+      title: "SzContext",
+      shortDescription:
+        "Open files or folders using your favorite app from Finder® context menu",
+      href: "/sz-context",
+      appIcon: SzContextIcon,
+      images: [
+        SzContextImage1,
+        SzContextImage2,
+        SzContextImage3,
+        SzContextImage4,
+      ],
+      githubPath: "RoadToDream/SzContext",
+      platform: Platform.mac,
+      os: "macOS 10.15+",
+      authorName: "Duan Jiawei",
+      authorUrl: "https://github.com/RoadToDream",
+    },
   ],
 };
 

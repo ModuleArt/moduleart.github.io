@@ -19,6 +19,10 @@ import TrelloImage from "../../assets/images/icons/trello.svg";
 
 const ProjectPage: FunctionComponent<Props> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
+  const [projectData, setProjectData] = useState({
+    stars: "",
+    openedIssues: "",
+  });
   const [releaseData, setReleaseData] = useState({
     version: "",
     size: "",
@@ -55,6 +59,14 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
           }
 
           setReleaseData(releaseData);
+        }),
+      axios
+        .get(`https://api.github.com/repos/${project.githubPath}`)
+        .then(({ data }) => {
+          setProjectData({
+            stars: data.stargazers_count,
+            openedIssues: data.open_issues_count,
+          });
         }),
       axios
         .get(`https://api.github.com/repos/${project.githubPath}/contributors`)
@@ -128,14 +140,18 @@ const ProjectPage: FunctionComponent<Props> = ({ project }) => {
                   <img src={GitHubImage} alt="GitHub" />
                   <span className="project-page__button-text">GitHub</span>
                 </a>
+                <span className="project-page__button-label">
+                  ☆ {projectData.stars} stars, {projectData.openedIssues} issues
+                </span>
               </div>
             )}
             {project.roadmapUrl && (
               <div className="project-page__button-holder">
                 <a className="project-page__button" href={project.roadmapUrl}>
                   <img src={TrelloImage} alt="Trello" />
-                  <span className="project-page__button-text">Roadmap</span>
+                  <span className="project-page__button-text">Trello</span>
                 </a>
+                <span className="project-page__button-label">Roadmap</span>
               </div>
             )}
           </div>
