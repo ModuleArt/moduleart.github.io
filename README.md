@@ -1,2 +1,2 @@
 # moduleart.github.io
-Official Module Art website.
+Official ModuleArt website
