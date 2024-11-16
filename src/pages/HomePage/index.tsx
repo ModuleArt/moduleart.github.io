@@ -1,16 +1,13 @@
-import { FunctionComponent } from "react";
-import DocumentTitle from "react-document-title";
-
+import { FC } from "react";
 import ProjectList from "../../components/ProjectsList";
 import mainConfig from "../../config/Main";
+import { PageMeta } from "@/components/PageMeta";
 
-const HomePage: FunctionComponent = () => {
+export const HomePage: FC = () => {
   return (
     <div className="home-page">
-      <DocumentTitle title={mainConfig.title} />
+      <PageMeta title={mainConfig.title} />
       <ProjectList projects={mainConfig.projects} />
     </div>
   );
 };
-
-export default HomePage;

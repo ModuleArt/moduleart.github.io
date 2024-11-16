@@ -1,6 +1,3 @@
-@import "../../assets/scss/variables.scss";
-@import "../../assets/scss/animations.scss";
-
 .project-page {
   &__head {
     text-align: center;
@@ -11,25 +8,25 @@
   }
 
   &__title {
-    font-size: $font-size-mx;
-    margin: $size-xl 0;
-    font-weight: $font-weight-lg;
+    font-size: var(--font-size-mx);
+    margin: var(--size-xl) 0;
+    font-weight: var(--font-weight-lg);
   }
 
   &__description {
-    font-size: $font-size-md;
-    font-weight: $font-weight-md;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
   }
 
   &__buttons {
     display: flex;
     justify-content: center;
-    padding: $size-mx;
+    padding: var(--size-mx);
     animation-name: mount-slide;
-    animation-duration: $duration-t;
+    animation-duration: var(--duration-t);
 
     & > * {
-      margin-right: $size-lg;
+      margin-right: var(--size-lg);
 
       &:last-child {
         margin-right: 0;
@@ -43,59 +40,59 @@
   }
 
   &__button-holder:hover &__button--primary {
-    box-shadow: $shadow-xl;
-    transform: translateY(-$size-md);
+    filter: var(--shadow-xl);
+    transform: translateY(calc(var(--size-md) * -1));
   }
 
   &__button {
     border: none;
-    padding: $size-lg $size-xl;
+    padding: var(--size-lg) var(--size-xl);
     display: flex;
     align-items: center;
-    border-radius: $size-md;
+    border-radius: var(--size-md);
     cursor: pointer;
-    background: $color-substrate;
+    background: var(--color-substrate);
     text-decoration: none;
     justify-content: center;
 
     img {
-      margin-right: $size-md;
+      margin-right: var(--size-md);
     }
 
     &--primary {
-      background: $color-primary;
+      background: var(--color-primary);
       color: #fff;
-      box-shadow: $shadow-lg;
-      transition: box-shadow $duration-t, transform $duration-t;
+      filter: var(--shadow-lg);
+      transition: filter var(--duration-t), transform var(--duration-t);
     }
   }
 
   &__button-version {
     opacity: 0.5;
-    margin-left: $size-md;
+    margin-left: var(--size-md);
   }
 
   &__button-label {
-    font-size: $font-size-sm;
-    color: $color-secondary;
-    margin-top: $size-lg;
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+    margin-top: var(--size-lg);
   }
 
   &__tile-heading {
     text-align: center;
-    margin: $size-mx2 0 $size-xl;
-    font-size: $font-size-xl;
+    margin: var(--size-mx2) 0 var(--size-xl);
+    font-size: var(--font-size-xl);
   }
 
   &__release-name {
     text-align: center;
-    margin: $size-lg 0;
-    font-weight: $font-weight-md;
+    margin: var(--size-lg) 0;
+    font-weight: var(--font-weight-md);
   }
 
   &__tile {
-    padding: $size-mx;
-    background: $color-substrate;
-    border-radius: $size-lg;
+    padding: var(--size-mx);
+    background: var(--color-substrate);
+    border-radius: var(--size-lg);
   }
 }

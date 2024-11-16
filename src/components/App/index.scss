@@ -1,5 +1,3 @@
-@import "../../assets/scss/variables.scss";
-
 .app {
   &__container {
     display: flex;
@@ -9,7 +7,7 @@
   }
 
   &__page {
-    padding: $size-xl 0;
+    padding: var(--size-xl) 0;
     flex: 1;
   }
 

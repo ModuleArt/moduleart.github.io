@@ -1,34 +1,36 @@
-// color
-$color-primary: #007aff; // Apple systemBlue light
-$color-secondary: #c7c7cc; // Apple systemGray3 light
-$color-substrate: #f2f2f7; // Apple systemGray6 light
-$color-text: #1c1c1e; // Apple systemGray6 dark
+:root {
+  // color
+  --color-primary: #007aff; // Apple systemBlue light
+  --color-secondary: #c7c7cc; // Apple systemGray3 light
+  --color-substrate: #f2f2f7; // Apple systemGray6 light
+  --color-text: #1c1c1e; // Apple systemGray6 dark
 
-// duration
-$duration-t: 0.25s; // for transitions
+  // duration
+  --duration-t: 0.25s; // for transitions
 
-// size
-$size-xs: 2px; // extra small
-$size-sm: 4px; // small
-$size-md: 8px; // medium
-$size-lg: 16px; // large
-$size-xl: 32px; // extra large
-$size-mx: 64px; // maximum
-$size-mx2: 128px; // double maximum
+  // size
+  --size-xs: 2px; // extra small
+  --size-sm: 4px; // small
+  --size-md: 8px; // medium
+  --size-lg: 16px; // large
+  --size-xl: 32px; // extra large
+  --size-mx: 64px; // maximum
+  --size-mx2: 128px; // double maximum
 
-// font size
-$font-size-sm: 14px; // small
-$font-size-md: 18px; // medium
-$font-size-lg: 24px; // large
-$font-size-xl: 32px; // extra large
-$font-size-mx: 48px; // maximum
+  // font size
+  --font-size-sm: 14px; // small
+  --font-size-md: 18px; // medium
+  --font-size-lg: 24px; // large
+  --font-size-xl: 32px; // extra large
+  --font-size-mx: 48px; // maximum
 
-// font weight
-$font-weight-sm: 400; // small
-$font-weight-md: 500; // medium
-$font-weight-lg: 700; // large
+  // font weight
+  --font-weight-sm: 400; // small
+  --font-weight-md: 500; // medium
+  --font-weight-lg: 700; // large
 
-// shadow
-$shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1); // medium
-$shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.25); // large
-$shadow-xl: 0 16px 32px 0 rgba(0, 0, 0, 0.5); // extra large
+  // shadow
+  --shadow-md: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); // medium
+  --shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25)); // large
+  --shadow-xl: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5)); // extra large
+}

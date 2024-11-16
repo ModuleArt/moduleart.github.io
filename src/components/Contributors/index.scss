@@ -1,10 +1,8 @@
-@import "../../assets/scss/variables.scss";
-
 .contributors {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -$size-md 0;
+    margin: calc(var(--size-md) * -1) 0;
     overflow: hidden;
   }
 
@@ -12,15 +10,15 @@
     display: flex;
     align-items: center;
     width: 33.3%;
-    margin: $size-md 0;
+    margin: var(--size-md) 0;
   }
 
   &__item-image {
     border-radius: 50%;
-    width: $size-xl;
+    width: var(--size-xl);
   }
 
   &__item-link {
-    margin: 0 $size-lg;
+    margin: 0 var(--size-lg);
   }
 }

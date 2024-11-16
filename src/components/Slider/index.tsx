@@ -1,9 +1,9 @@
-import { FunctionComponent } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import { FunctionComponent } from 'react'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 
-import Props from "./Props";
-import "./index.scss";
+import Props from './Props'
+import './index.scss'
 
 const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
   return (
@@ -17,40 +17,34 @@ const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
         showIndicators={false}
         thumbWidth={64}
         renderArrowNext={(clickHandler) => {
+          if (images.length <= 1) return null
+
           return (
-            <button
-              className="slider__arrow slider__arrow--next"
-              onClick={clickHandler}
-            >
+            <button className="slider__arrow slider__arrow--next" onClick={clickHandler}>
               Next
             </button>
-          );
+          )
         }}
         renderArrowPrev={(clickHandler) => {
+          if (images.length <= 1) return null
+
           return (
-            <button
-              className="slider__arrow slider__arrow--prev"
-              onClick={clickHandler}
-            >
+            <button className="slider__arrow slider__arrow--prev" onClick={clickHandler}>
               Prev
             </button>
-          );
+          )
         }}
       >
         {images.map((image, imageIndex) => {
           return (
             <div className="slider__slide" key={imageIndex}>
-              <img
-                className="slider__image"
-                src={image}
-                alt={labels[imageIndex] ? labels[imageIndex] : ""}
-              />
+              <img className="slider__image" src={image} alt={labels[imageIndex] ? labels[imageIndex] : ''} />
             </div>
-          );
+          )
         })}
       </Carousel>
     </div>
-  );
-};
+  )
+}
 
-export default Slider;
+export default Slider

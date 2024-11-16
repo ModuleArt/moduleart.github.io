@@ -1,0 +1,28 @@
+{
+  "index.html": {
+    "file": "assets/app-E0FD-che.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/app-BDNZmPAP.css"
+    ],
+    "assets": [
+      "assets/Pacifico-Dla-xvIJ.ttf",
+      "assets/Inter-Regular-B3vv58xm.ttf",
+      "assets/Inter-Bold-DzTqCIlM.ttf"
+    ]
+  },
+  "src/assets/fonts/Inter/Inter-Bold.ttf": {
+    "file": "assets/Inter-Bold-DzTqCIlM.ttf",
+    "src": "src/assets/fonts/Inter/Inter-Bold.ttf"
+  },
+  "src/assets/fonts/Inter/Inter-Regular.ttf": {
+    "file": "assets/Inter-Regular-B3vv58xm.ttf",
+    "src": "src/assets/fonts/Inter/Inter-Regular.ttf"
+  },
+  "src/assets/fonts/Pacifico/Pacifico.ttf": {
+    "file": "assets/Pacifico-Dla-xvIJ.ttf",
+    "src": "src/assets/fonts/Pacifico/Pacifico.ttf"
+  }
+}

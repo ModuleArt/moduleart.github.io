@@ -1,8 +1,6 @@
-@import "../../assets/scss/variables.scss";
-
 .projects-list {
   &__project {
-    margin-bottom: $size-mx;
+    margin-bottom: var(--size-mx);
 
     &:last-child {
       margin-bottom: 0;

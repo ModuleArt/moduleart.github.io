@@ -1,7 +1,7 @@
-import { useEffect, FunctionComponent } from "react";
+import { useEffect, FC, PropsWithChildren } from "react";
 import { useLocation } from "react-router";
 
-const ScrollToTop: FunctionComponent = ({ children }) => {
+export const ScrollToTop: FC<PropsWithChildren> = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
@@ -10,5 +10,3 @@ const ScrollToTop: FunctionComponent = ({ children }) => {
 
   return <>{children}</>;
 };
-
-export default ScrollToTop;

@@ -1,13 +1,11 @@
-@import "../../assets/scss/variables.scss";
-
 .link {
   display: inline-block;
   text-decoration: none;
-  color: $color-primary;
+  color: var(--color-primary);
   position: relative;
 
   &__text {
-    transition: transform $duration-t;
+    transition: transform var(--duration-t);
     display: block;
   }
 
@@ -17,15 +15,15 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: $size-xs;
+    height: var(--size-xs);
     border-radius: 1px;
-    background: $color-primary;
+    background: var(--color-primary);
     opacity: 0;
-    transition: opacity $duration-t;
+    transition: opacity var(--duration-t);
   }
 
   &:hover &__text {
-    transform: translateY(-$size-xs);
+    transform: translateY(calc(var(--size-xs) * -1));
   }
 
   &:hover {

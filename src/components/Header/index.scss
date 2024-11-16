@@ -1,20 +1,18 @@
-@import "../../assets/scss/variables.scss";
-
 .header {
   text-align: center;
-  padding: $size-xl 0;
-  margin-bottom: $size-lg;
+  padding: var(--size-xl) 0;
+  margin-bottom: var(--size-lg);
 
   &__logo {
-    color: $color-primary;
+    color: var(--color-primary);
     text-decoration: none;
     display: inline-block;
 
     h1,
     span {
-      font: #{$size-xl}/ 150% Pacifico;
+      font: var(--size-xl) / 150% Pacifico;
       display: block;
-      transition: transform $duration-t;
+      transition: transform var(--duration-t);
       transform: translateX(19px);
       display: flex;
       justify-content: center;
@@ -23,10 +21,10 @@
 
       &::after {
         content: "❤";
-        border-radius: $size-xs;
+        border-radius: var(--size-xs);
         opacity: 0;
-        transition: opacity $duration-t;
-        margin-left: $size-md;
+        transition: opacity var(--duration-t);
+        margin-left: var(--size-md);
       }
     }
 
@@ -46,10 +44,10 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: $size-md;
+    margin-top: var(--size-md);
   }
 
   &__link {
-    margin: 0 $size-md;
+    margin: 0 var(--size-md);
   }
 }

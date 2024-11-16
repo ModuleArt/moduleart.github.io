@@ -1,15 +1,13 @@
-import { FunctionComponent } from "react";
-import DocumentTitle from "react-document-title";
-
+import { FC } from "react";
 import "./index.scss";
+import { PageMeta } from "@/components/PageMeta";
 
-const AboutPage: FunctionComponent = () => {
+export const AboutPage: FC = () => {
   return (
     <div className="about-page">
-      <DocumentTitle title="404" />
+      <PageMeta title="About ModuleArt" />
+
       <h1 className="not-found-page__heading">About us</h1>
     </div>
   );
 };
-
-export default AboutPage;

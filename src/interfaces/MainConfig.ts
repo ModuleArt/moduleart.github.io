@@ -1,7 +1,7 @@
 import Project from "./Project";
 
 interface MainConfig {
-  title: string,
+  title: string;
   projects: Project[];
 }
 

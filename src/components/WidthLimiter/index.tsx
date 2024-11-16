@@ -1,13 +1,9 @@
-import { FunctionComponent } from "react";
-import { createSlot } from "react-slotify";
+import { FC, PropsWithChildren } from "react";
 import cn from "classnames";
-
 import Props from "./Props";
 import "./index.scss";
 
-export const WidthLimiterSlot = createSlot();
-
-const WidthLimiter: FunctionComponent<Props> = ({
+export const WidthLimiter: FC<PropsWithChildren<Props>> = ({
   children,
   className = "",
 }) => {
@@ -18,9 +14,7 @@ const WidthLimiter: FunctionComponent<Props> = ({
         [className]: true,
       })}
     >
-      <WidthLimiterSlot.Renderer childs={children} />
+      {children}
     </div>
   );
 };
-
-export default WidthLimiter;

@@ -1,0 +1,997 @@
+{
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/classnames/index.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/dom-serializer/lib/foreignNames.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/dom-serializer/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domelementtype/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domhandler/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domhandler/lib/node.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/feeds.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/helpers.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/legacy.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/manipulation.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/querying.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/stringify.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/domutils/lib/traversal.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/entities/lib/decode.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/entities/lib/decode_codepoint.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/entities/lib/encode.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/entities/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/htmlparser2/lib/FeedHandler.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/htmlparser2/lib/Parser.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/htmlparser2/lib/Tokenizer.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/htmlparser2/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/prop-types/index.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-dom/cjs/react-dom.production.min.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-dom/index.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-easy-swipe/lib/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-easy-swipe/lib/react-swipe.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/CSSTranslate.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/components/Carousel/animations.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/components/Carousel/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/components/Carousel/types.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/components/Carousel/utils.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/components/Thumbs.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/cssClasses.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/dimensions.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/index.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/shims/document.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react-responsive-carousel/lib/js/shims/window.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react/cjs/react-jsx-runtime.production.min.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react/cjs/react.production.min.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react/index.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/react/jsx-runtime.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/scheduler/cjs/scheduler.production.min.js?commonjs-exports": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/scheduler/index.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000/Users/eugene/Projects/moduleart.github.io/node_modules/showdown/dist/showdown.js?commonjs-module": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000commonjsHelpers.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "\u0000vite/modulepreload-polyfill.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "index.html": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/@remix-run/router/dist/router.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/adapters/adapters.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/adapters/fetch.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/adapters/xhr.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/axios.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/cancel/CancelToken.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/cancel/CanceledError.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/cancel/isCancel.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/Axios.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/AxiosError.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/AxiosHeaders.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/InterceptorManager.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/buildFullPath.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/dispatchRequest.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/mergeConfig.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/settle.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/core/transformData.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/defaults/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/defaults/transitional.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/env/data.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/AxiosURLSearchParams.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/HttpStatusCode.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/bind.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/buildURL.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/combineURLs.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/composeSignals.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/cookies.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/formDataToJSON.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/isAxiosError.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/null.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/parseHeaders.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/parseProtocol.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/progressEventReducer.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/resolveConfig.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/speedometer.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/spread.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/throttle.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/toFormData.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/toURLEncodedForm.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/trackStream.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/helpers/validator.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/browser/classes/Blob.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/browser/classes/FormData.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/browser/classes/URLSearchParams.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/browser/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/common/utils.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/platform/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/axios/lib/utils.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/classnames/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/dom-serializer/lib/foreignNames.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/dom-serializer/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domelementtype/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domhandler/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domhandler/lib/node.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/feeds.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/helpers.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/legacy.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/manipulation.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/querying.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/stringify.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/domutils/lib/traversal.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/decode.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/decode_codepoint.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/encode.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/maps/decode.json": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/maps/entities.json": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/maps/legacy.json": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/entities/lib/maps/xml.json": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/htmlparser2/lib/FeedHandler.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/htmlparser2/lib/Parser.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/htmlparser2/lib/Tokenizer.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/htmlparser2/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/invariant/browser.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/prop-types/factoryWithThrowingShims.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/prop-types/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/prop-types/lib/ReactPropTypesSecret.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-dom/cjs/react-dom.production.min.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-dom/client.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-dom/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-easy-swipe/lib/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-easy-swipe/lib/react-swipe.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-fast-compare/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-helmet-async/lib/index.module.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/CSSTranslate.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/components/Carousel/animations.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/components/Carousel/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/components/Carousel/utils.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/components/Thumbs.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/cssClasses.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/dimensions.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/shims/document.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/js/shims/window.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-responsive-carousel/lib/styles/carousel.min.css": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-router-dom/dist/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-router/dist/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react-showdown/dist/react-showdown.esm.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react/cjs/react-jsx-runtime.production.min.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react/cjs/react.production.min.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/react/jsx-runtime.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/scheduler/cjs/scheduler.production.min.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/scheduler/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/shallowequal/index.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/showdown/dist/showdown.js": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/index.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.B6SGTWpD.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C0y5wbxl.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C6pK7rvr.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CjIppNIS.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/assets/scss/global.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/App/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/App/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Contributors/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Contributors/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Footer/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Footer/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Header/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Header/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Link/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Link/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Loading/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Loading/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/MarkdownView/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/MarkdownView/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/PageMeta/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/ProjectCard/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/ProjectCard/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/ProjectsList/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/ProjectsList/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/ScrollToTop/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Slider/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/Slider/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/WidthLimiter/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/components/WidthLimiter/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/config/Main.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/enums/Platform.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/helpers/dataHelper.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/main.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/pages/AboutPage/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/pages/AboutPage/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/pages/HomePage/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/pages/ProjectPage/index.scss": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/pages/ProjectPage/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/routes/dictionary.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/routes/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ]
+}

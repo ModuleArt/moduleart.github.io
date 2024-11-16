@@ -1,40 +1,38 @@
-@import "../../assets/scss/variables.scss";
-
 .project-card {
   &__title {
-    margin-bottom: $size-lg;
+    margin-bottom: var(--size-lg);
     text-align: center;
-    font-size: $font-size-lg;
+    font-size: var(--font-size-lg);
   }
 
   &__text {
-    font-weight: $font-weight-lg;
+    font-weight: var(--font-weight-lg);
   }
 
   &__platform {
-    color: $color-secondary;
-    font-weight: $font-weight-sm;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-sm);
   }
 
   &__tile {
     display: block;
     overflow: hidden;
-    background: $color-substrate;
-    border-radius: $size-lg;
+    background: var(--color-substrate);
+    border-radius: var(--size-lg);
     height: 300px;
-    padding: #{$size-mx + $size-xl} $size-mx 0;
+    padding: calc(var(--size-mx) + var(--size-xl)) var(--size-mx) 0;
     text-align: center;
   }
 
   &__image {
     max-width: 100%;
-    transition: box-shadow $duration-t, transform $duration-t;
-    border-radius: $size-md;
-    box-shadow: $shadow-lg;
+    transition: filter var(--duration-t), transform var(--duration-t);
+    border-radius: var(--size-md);
+    filter: var(--shadow-lg);
   }
 
   &--clickable &__tile:hover &__image {
-    transform: translateY(-$size-xl);
-    box-shadow: $shadow-xl;
+    transform: translateY(calc(var(--size-xl) * -1));
+    filter: var(--shadow-xl);
   }
 }
