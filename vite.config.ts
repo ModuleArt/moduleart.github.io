@@ -8,12 +8,14 @@ const config: UserConfig = {
     react(),
     sitemap({
       outDir: 'docs',
+      hostname: 'https://moduleart.github.io/',
       robots: [{ userAgent: '*', allow: '/', disallow: '/assets' }],
     }),
   ],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
+      '~': resolve(__dirname, './node_modules'),
     },
   },
   build: {
@@ -24,7 +26,7 @@ const config: UserConfig = {
   css: {
     preprocessorOptions: {
       scss: {
-        api: 'modern-compiler', // or "modern"
+        api: 'modern-compiler',
       },
     },
   },

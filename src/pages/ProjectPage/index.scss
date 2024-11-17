@@ -9,8 +9,9 @@
 
   &__title {
     font-size: var(--font-size-mx);
-    margin: var(--size-xl) 0;
+    margin: var(--size-lg) 0;
     font-weight: var(--font-weight-lg);
+    line-height: var(--font-size-mx2);
   }
 
   &__description {
@@ -21,22 +22,16 @@
   &__buttons {
     display: flex;
     justify-content: center;
-    padding: var(--size-mx);
+    padding: var(--size-mx) 0;
     animation-name: mount-slide;
     animation-duration: var(--duration-t);
-
-    & > * {
-      margin-right: var(--size-lg);
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    flex-wrap: wrap;
   }
 
   &__button-holder {
     display: flex;
     flex-direction: column;
+    padding: var(--size-md);
   }
 
   &__button-holder:hover &__button--primary {
@@ -109,6 +104,12 @@
       &::before {
         content: '• ';
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__tile {
+      padding: var(--size-xl);
     }
   }
 }

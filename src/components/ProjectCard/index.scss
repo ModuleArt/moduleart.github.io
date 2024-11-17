@@ -35,4 +35,23 @@
     transform: translateY(calc(var(--size-xl) * -1));
     filter: var(--shadow-xl);
   }
+
+  @media (max-width: 768px) {
+    &__tile {
+      padding: calc(var(--size-xl) + var(--size-lg)) var(--size-xl) 0;
+      height: 200px;
+    }
+
+    &--clickable &__tile:hover &__image {
+      transform: none;
+      filter: none;
+    }
+  }
+
+  @media (max-width: 420px) {
+    &__tile {
+      padding: calc(var(--size-lg) + var(--size-md)) var(--size-lg) 0;
+      height: 160px;
+    }
+  }
 }

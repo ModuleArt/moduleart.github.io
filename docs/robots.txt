@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets
 
-Sitemap: http://localhost/sitemap.xml
+Sitemap: https://moduleart.github.io/sitemap.xml

@@ -11,7 +11,7 @@ export const AboutPage: FC = () => {
 
       <h1 className="about-page__heading">About</h1>
 
-      <WidthLimiter maxWidth={500} className="about-page__article">
+      <WidthLimiter maxWidth={460} className="about-page__article">
         I'm just <Link text="a guy" href="https://github.com/Beelink" /> who made a couple of cool apps. I hope you like them!
         <br />
         <br />

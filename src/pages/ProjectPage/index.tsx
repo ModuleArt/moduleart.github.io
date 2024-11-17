@@ -158,7 +158,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
           <div className="project-page__tile">
             <ul className="project-page__features">
               {project.features.map((feature) => (
-                <li>{feature}</li>
+                <li key={feature}>{feature}</li>
               ))}
             </ul>
           </div>

@@ -9,7 +9,7 @@
   &__item {
     display: flex;
     align-items: center;
-    width: 33.3%;
+    flex: 33.33%;
     margin: var(--size-md) 0;
   }
 
@@ -20,5 +20,17 @@
 
   &__item-link {
     margin: 0 var(--size-lg);
+  }
+
+  @media (max-width: 992px) {
+    &__item {
+      flex: 50%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__item {
+      flex: 100%;
+    }
   }
 }

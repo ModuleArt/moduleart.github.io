@@ -113,9 +113,22 @@
     }
 
     .thumbs-wrapper {
+      margin: 0;
       text-align: center;
       overflow: visible;
       padding: 0 var(--size-mx) var(--size-mx);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__slide {
+      padding: var(--size-xl);
+    }
+
+    &__carousel {
+      .thumbs-wrapper {
+        padding: 0 var(--size-xl) var(--size-xl);
+      }
     }
   }
 }
