@@ -6,7 +6,7 @@ export const Project_SzContext: Project = {
   title: 'SzContext',
   shortDescription: 'Open files or folders using your favorite app from Finder® context menu',
   longDescription: 'Provides your favorite apps at your hands. Open files or folders using your favorite app from Finder® context menu',
-  href: '/sz-context',
+  href: '/szcontext',
   appIcon: '/assets/images/projects/sz-context/icon.webp',
   images: [
     '/assets/images/projects/sz-context/1.webp',

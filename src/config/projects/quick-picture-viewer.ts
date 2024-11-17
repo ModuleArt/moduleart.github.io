@@ -7,7 +7,7 @@ export const Project_QuickPictureViewer: Project = {
   shortDescription: 'Lightweight, versatile desktop image viewer for Windows',
   longDescription:
     'Small and fast but still have a bunch of features. 20+ formats supported. Works great with GIF, SVG, PNG, WEBP, ICO, BMP, DDS, TGA, CR2 etc.',
-  href: '/quick-picture-viewer',
+  href: '/quickpictureviewer',
   appIcon: '/assets/images/projects/quick-picture-viewer/icon.webp',
   images: ['/assets/images/projects/quick-picture-viewer/1.webp', '/assets/images/projects/quick-picture-viewer/2.webp'],
   githubPath: 'ModuleArt/quick-picture-viewer',

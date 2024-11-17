@@ -6,7 +6,7 @@ export const Project_PlainColor: Project = {
   title: 'PlainColor',
   shortDescription: 'Lightweight stylish cross-platform color picker app',
   longDescription: 'We are in active development, and many new features are coming soon...',
-  href: '/plain-color',
+  href: '/plaincolor',
   appIcon: '/assets/images/projects/plain-color/icon.webp',
   images: ['/assets/images/projects/plain-color/1.webp'],
   githubPath: 'ModuleArt/plain-color',
