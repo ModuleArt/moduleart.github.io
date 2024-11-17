@@ -1,8 +1,7 @@
-import Project from "./Project";
+import { Project } from '@/interfaces/Project'
 
-interface MainConfig {
-  title: string;
-  projects: Project[];
+export interface MainConfig {
+  title: string
+  description: string
+  projects: Project[]
 }
-
-export default MainConfig;

@@ -1,6 +1,4 @@
-interface Props {
-  images: string[];
-  labels?: string[];
+export interface Props {
+  images: string[]
+  labels?: string[]
 }
-
-export default Props;

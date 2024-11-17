@@ -1,12 +1,14 @@
-import Platform from '@/enums/Platform'
-import MainConfig from '@/interfaces/MainConfig'
+import { Platform } from '@/enums/Platform'
+import { MainConfig } from '@/interfaces/MainConfig'
 
-const mainConfig: MainConfig = {
+export const mainConfig: MainConfig = {
   title: 'ModuleArt',
+  description: 'Best apps with love',
   projects: [
     {
       title: 'PlainColor',
       shortDescription: 'Lightweight stylish cross-platform color picker app',
+      longDescription: '',
       href: '/plain-color',
       appIcon: '/assets/images/projects/plain-color/icon.png',
       images: ['/assets/images/projects/plain-color/1.webp'],
@@ -20,6 +22,8 @@ const mainConfig: MainConfig = {
     {
       title: 'Quick Picture Viewer',
       shortDescription: 'Lightweight, versatile desktop image viewer for Windows',
+      longDescription:
+        'Small and fast but still have a bunch of features. 20+ formats supported. Works great with GIF, SVG, PNG, WEBP, ICO, BMP, DDS, TGA, CR2 etc.',
       href: '/quick-picture-viewer',
       appIcon: '/assets/images/projects/quick-picture-viewer/icon.png',
       images: ['/assets/images/projects/quick-picture-viewer/1.png', '/assets/images/projects/quick-picture-viewer/2.png'],
@@ -33,6 +37,7 @@ const mainConfig: MainConfig = {
     {
       title: 'SzContext',
       shortDescription: 'Open files or folders using your favorite app from Finder® context menu',
+      longDescription: 'Provides your favorite apps at your hands. Open files or folders using your favorite app from Finder® context menu',
       href: '/sz-context',
       appIcon: '/assets/images/projects/sz-context/icon.png',
       images: [
@@ -50,6 +55,7 @@ const mainConfig: MainConfig = {
     {
       title: 'Quick Color Picker',
       shortDescription: 'Lightweight desktop color picker and color editor utility for Windows',
+      longDescription: '',
       href: '/quick-color-picker',
       appIcon: '/assets/images/projects/quick-color-picker/icon.png',
       images: ['/assets/images/projects/quick-color-picker/1.png', '/assets/images/projects/quick-color-picker/2.png'],
@@ -61,5 +67,3 @@ const mainConfig: MainConfig = {
     },
   ],
 }
-
-export default mainConfig

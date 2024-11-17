@@ -1,14 +1,25 @@
 .markdown-view {
+  * {
+    all: inherit !important;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    margin: var(--size-xl) 0 var(--size-md);
+    margin: var(--size-xl) 0 var(--size-md) !important;
+    font-weight: var(--font-weight-lg) !important;
   }
 
   img {
-    margin: var(--size-xl) 0;
+    margin: var(--size-xl) 0 !important;
+  }
+
+  li {
+    &::before {
+      content: '• ';
+    }
   }
 }

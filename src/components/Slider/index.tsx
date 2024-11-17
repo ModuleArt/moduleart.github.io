@@ -1,11 +1,10 @@
-import { FunctionComponent } from 'react'
+import { FC } from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-
-import Props from './Props'
+import { Props } from './Props'
 import './index.scss'
 
-const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
+export const Slider: FC<Props> = ({ images, labels = [] }) => {
   return (
     <div className="slider">
       <Carousel
@@ -46,5 +45,3 @@ const Slider: FunctionComponent<Props> = ({ images, labels = [] }) => {
     </div>
   )
 }
-
-export default Slider

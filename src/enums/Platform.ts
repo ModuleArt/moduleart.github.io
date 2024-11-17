@@ -1,6 +1,4 @@
-enum Platform {
-  win = "Win",
-  mac = "Mac",
+export enum Platform {
+  win = 'Win',
+  mac = 'Mac',
 }
-
-export default Platform;

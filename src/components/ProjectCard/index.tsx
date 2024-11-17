@@ -1,22 +1,15 @@
-import { FunctionComponent } from "react";
-import { Link as RouterLink } from "react-router-dom";
-import cn from "classnames";
+import { FC } from 'react'
+import { Link as RouterLink } from 'react-router-dom'
+import cn from 'classnames'
+import { Props } from './Props'
+import './index.scss'
 
-import Props from "./Props";
-import "./index.scss";
-
-const ProjectCard: FunctionComponent<Props> = ({
-  className,
-  title,
-  href = null,
-  image,
-  platform,
-}) => {
+export const ProjectCard: FC<Props> = ({ className, title, href = null, image, platform }) => {
   return (
     <div
       className={cn({
-        "project-card": true,
-        "project-card--clickable": href,
+        'project-card': true,
+        'project-card--clickable': href,
         [className]: true,
       })}
     >
@@ -34,7 +27,5 @@ const ProjectCard: FunctionComponent<Props> = ({
         </div>
       )}
     </div>
-  );
-};
-
-export default ProjectCard;
+  )
+}

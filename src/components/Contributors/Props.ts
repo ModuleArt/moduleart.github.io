@@ -1,11 +1,5 @@
-interface Contributor {
-  login: string;
-  profileUrl: string;
-  avatarUrl: string;
-}
+import { Contributor } from '@/interfaces/Contributor'
 
-interface Props {
-  contributors: Contributor[];
+export interface Props {
+  contributors: Contributor[]
 }
-
-export default Props;

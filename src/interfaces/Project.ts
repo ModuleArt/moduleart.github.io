@@ -1,8 +1,9 @@
-import Platform from '../enums/Platform'
+import { Platform } from '@/enums/Platform'
 
-interface Project {
+export interface Project {
   title: string
   shortDescription: string
+  longDescription: string
   href: string
   appIcon: string
   images: string[]
@@ -13,5 +14,3 @@ interface Project {
   authorName: string
   authorUrl: string
 }
-
-export default Project

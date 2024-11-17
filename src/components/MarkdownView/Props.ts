@@ -1,5 +1,3 @@
-interface Props {
-  markdown: string;
+export interface Props {
+  markdown: string
 }
-
-export default Props;

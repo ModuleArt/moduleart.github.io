@@ -1,17 +1,15 @@
-import { FC } from "react";
-import { Head } from "vite-react-ssg";
-import { IPageMetaProps } from "./props";
+import { FC } from 'react'
+import { Head } from 'vite-react-ssg'
+import { Props } from './Props'
+import { mainConfig } from '@/config/Main'
 
-export const PageMeta: FC<IPageMetaProps> = ({
-  title,
-  image = "/android-chrome-512x512.png",
-}) => {
+export const PageMeta: FC<Props> = ({ title, description = mainConfig.description, image = '/android-chrome-512x512.png' }) => {
   return (
     <Head>
       {/* description */}
-      {/* <meta name="description" content={description} />
+      <meta name="description" content={description} />
       <meta property="og:description" content={description} />
-      <meta property="twitter:description" content={description} /> */}
+      <meta property="twitter:description" content={description} />
 
       {/* title */}
       <title>{title}</title>
@@ -31,5 +29,5 @@ export const PageMeta: FC<IPageMetaProps> = ({
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
     </Head>
-  );
-};
+  )
+}

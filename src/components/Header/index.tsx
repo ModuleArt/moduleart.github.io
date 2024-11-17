@@ -1,17 +1,16 @@
-import { FunctionComponent } from "react";
-import { useLocation } from "react-router-dom";
-import { Link as RouterLink } from "react-router-dom";
+import { FC } from 'react'
+import { useLocation } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
+import { mainConfig } from '@/config/Main'
+import { Link } from '@/components/Link'
+import './index.scss'
 
-import mainConfig from "../../config/Main";
-import Link from "../Link";
-import "./index.scss";
-
-const Header: FunctionComponent = () => {
-  const location = useLocation();
+export const Header: FC = () => {
+  const location = useLocation()
 
   return (
     <header className="header">
-      {location.pathname === "/" ? (
+      {location.pathname === '/' ? (
         <div className="header__logo">
           <h1>{mainConfig.title}</h1>
         </div>
@@ -29,7 +28,5 @@ const Header: FunctionComponent = () => {
         </li>
       </ul>
     </header>
-  );
-};
-
-export default Header;
+  )
+}

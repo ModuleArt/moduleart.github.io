@@ -1,15 +1,10 @@
-import { FunctionComponent } from "react";
+import { FC } from 'react'
+import './index.scss'
 
-import "./index.scss";
-
-const Footer: FunctionComponent = () => {
+export const Footer: FC = () => {
   return (
     <footer className="footer">
-      <span className="footer__copyright">
-        Copyright © {new Date().getFullYear()} ModuleArt. All rights reserved.
-      </span>
+      <span className="footer__copyright">Copyright © {new Date().getFullYear()} ModuleArt. All rights reserved.</span>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}

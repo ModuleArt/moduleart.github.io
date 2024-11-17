@@ -1,6 +1,13 @@
 {
   "name": "moduleart-website",
-  "version": "3.0.0",
+  "version": "4.0.0",
+  "type": "module",
+  "homepage": "https://moduleart.github.io",
+  "author": {
+    "name": "Eugene Volynko",
+    "email": "volynko.ua@gmail.com",
+    "url": "https://github.com/Beelink"
+  },
   "scripts": {
     "dev": "tsc -b && vite-react-ssg dev",
     "dev:csr": "vite",
@@ -10,29 +17,30 @@
   "dependencies": {
     "axios": "^1.7.7",
     "classnames": "^2.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "md-to-react-email": "^5.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.28.0",
     "react-showdown": "^2.3.1",
-    "react-snowfall": "^2.1.1",
-    "vite-react-ssg": "^0.8.0"
+    "react-snowfall": "^2.1.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "9.14.0",
     "@types/node": "^22.8.6",
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^9.15.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint": "9.14.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
     "sass": "^1.80.6",
     "terser": "^5.36.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.5.3",
     "typescript-eslint": "^8.14.0",
-    "vite": "^5.3.1",
-    "vite-plugin-sitemap": "^0.7.1"
+    "vite": "^5.4.1",
+    "vite-plugin-sitemap": "^0.7.1",
+    "vite-react-ssg": "^0.7.3"
   },
   "eslintConfig": {
     "extends": [

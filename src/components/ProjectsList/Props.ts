@@ -1,7 +1,5 @@
-import Project from "../../interfaces/Project";
+import { Project } from '@/interfaces/Project'
 
-interface Props {
-  projects: Project[];
+export interface Props {
+  projects: Project[]
 }
-
-export default Props;

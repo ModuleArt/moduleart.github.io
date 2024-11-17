@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
+import { FC } from 'react'
+import './index.scss'
 
-import "./index.scss";
-
-const Loading: FunctionComponent = () => {
+export const Loading: FC = () => {
   return (
     <div className="loading">
       <div className="loading__lds-ellipsis">
@@ -12,7 +11,5 @@ const Loading: FunctionComponent = () => {
         <div></div>
       </div>
     </div>
-  );
-};
-
-export default Loading;
+  )
+}

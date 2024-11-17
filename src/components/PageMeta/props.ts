@@ -1,5 +1,5 @@
-export interface IPageMetaProps {
-  title: string;
-  description?: string;
-  image?: string;
+export interface Props {
+  title: string
+  description?: string
+  image?: string
 }

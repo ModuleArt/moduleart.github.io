@@ -1,15 +1,12 @@
-import { FunctionComponent } from 'react'
-import Showdown from 'react-showdown'
-
-import Props from './Props'
+import { FC } from 'react'
+import { EmailMarkdown } from 'md-to-react-email'
+import { Props } from './Props'
 import './index.scss'
 
-const MarkdownView: FunctionComponent<Props> = ({ markdown }) => {
+export const MarkdownView: FC<Props> = ({ markdown }) => {
   return (
     <div className="markdown-view">
-      <Showdown markdown={markdown} options={{ tables: true, emoji: true }} />
+      <EmailMarkdown markdown={markdown} />
     </div>
   )
 }
-
-export default MarkdownView
