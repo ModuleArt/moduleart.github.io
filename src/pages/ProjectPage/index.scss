@@ -101,4 +101,14 @@
     background: var(--color-substrate);
     border-radius: var(--size-lg);
   }
+
+  &__features {
+    li {
+      margin-bottom: var(--size-md);
+
+      &::before {
+        content: '• ';
+      }
+    }
+  }
 }

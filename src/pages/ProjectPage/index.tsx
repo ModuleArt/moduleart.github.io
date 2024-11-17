@@ -152,6 +152,18 @@ export const ProjectPage: FC<Props> = ({ project }) => {
         )}
       </div>
       <Slider images={project.images} />
+      {project.features && project.features.length > 0 && (
+        <>
+          <h2 className="project-page__tile-heading">Features</h2>
+          <div className="project-page__tile">
+            <ul className="project-page__features">
+              {project.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
       <h2 className="project-page__tile-heading">What's new</h2>
       {!isLoading && (
         <h4 className="project-page__release-name">

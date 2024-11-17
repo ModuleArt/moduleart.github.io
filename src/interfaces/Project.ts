@@ -12,4 +12,5 @@ export interface Project {
   downloads: Download[]
   authorName: string
   authorUrl: string
+  features?: string[]
 }

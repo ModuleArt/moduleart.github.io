@@ -11,7 +11,7 @@ export const Project_QuickColorPicker: Project = {
   images: ['/assets/images/projects/quick-color-picker/1.png', '/assets/images/projects/quick-color-picker/2.png'],
   githubPath: 'ModuleArt/quick-color-picker',
   donateUrl: 'https://opencollective.com/moduleart',
-  downloads: [{ platform: Platform.win, fileExtension: FileExtension.exe, requirements: 'Windows 7+' }],
+  downloads: [{ platform: Platform.win, fileExtension: FileExtension.msi, requirements: 'Windows 7+' }],
   authorName: 'Eugene Volynko',
   authorUrl: 'https://github.com/Beelink',
 }
