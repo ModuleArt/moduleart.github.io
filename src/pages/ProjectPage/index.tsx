@@ -10,6 +10,7 @@ import { Contributors } from '@/components/Contributors'
 import './index.scss'
 import { PageMeta } from '@/components/PageMeta'
 import apiClient from '@/api'
+import { DownloadAsset } from '@/interfaces/DownloadAsset'
 
 export const ProjectPage: FC<Props> = ({ project }) => {
   const [isLoading, setLoading] = useState(true)
@@ -19,8 +20,6 @@ export const ProjectPage: FC<Props> = ({ project }) => {
   })
   const [releaseData, setReleaseData] = useState({
     version: '',
-    size: '',
-    downloadUrl: '',
     releaseMd: '',
     releaseDate: '',
     tagName: '',
@@ -32,6 +31,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       avatarUrl: string
     }[]
   >([])
+  const [assets, setAssets] = useState<DownloadAsset[]>([])
 
   useEffect(() => {
     Promise.all([
@@ -42,8 +42,6 @@ export const ProjectPage: FC<Props> = ({ project }) => {
         .then(({ data }) => {
           const releaseData = {
             version: data.tag_name,
-            size: formatBytes(data.assets[0].size),
-            downloadUrl: data.assets[0].browser_download_url,
             releaseMd: data.body,
             releaseDate: new Date(data.published_at).toLocaleDateString('en-US', {
               day: '2-digit',
@@ -58,6 +56,25 @@ export const ProjectPage: FC<Props> = ({ project }) => {
           }
 
           setReleaseData(releaseData)
+
+          const assets: DownloadAsset[] = data.assets
+            .map((asset) => {
+              const assetNameSplitted = asset.browser_download_url.split('.')
+              const assetExt = assetNameSplitted.length ? assetNameSplitted.pop() : undefined
+
+              if (assetExt) {
+                const download = project.downloads.find((download) => download.fileExtension === assetExt)
+
+                if (download) {
+                  return { size: formatBytes(data.assets[0].size), downloadUrl: data.assets[0].browser_download_url, download }
+                }
+              }
+
+              return null
+            })
+            .filter((a) => a !== null)
+
+          setAssets(assets)
         }),
       apiClient.get<{ stargazers_count: string; open_issues_count: string }>(`/repos/${project.githubPath}`).then(({ data }) => {
         setProjectData({
@@ -96,18 +113,20 @@ export const ProjectPage: FC<Props> = ({ project }) => {
           <Loading />
         ) : (
           <div className="project-page__buttons">
-            {project.platforms.map((platform) => (
-              <div className="project-page__button-holder">
-                <a className="project-page__button project-page__button--primary" href={releaseData.downloadUrl}>
+            {assets.map((asset) => (
+              <div className="project-page__button-holder" key={asset.download.fileExtension}>
+                <a className="project-page__button project-page__button--primary" href={asset.downloadUrl}>
                   <img
-                    src={platform === Platform.win ? '/assets/images/icons/ic:baseline-window.svg' : '/assets/images/icons/ic:baseline-apple.svg'}
+                    src={
+                      asset.download.platform === Platform.win ? '/assets/images/icons/ic:baseline-window.svg' : '/assets/images/icons/ic:baseline-apple.svg'
+                    }
                     alt="Download"
                   />
                   <span className="project-page__button-text">Download</span>
                   <span className="project-page__button-version">{releaseData.version}</span>
                 </a>
                 <span className="project-page__button-label">
-                  {project.os}, {releaseData.size}
+                  {asset.download.requirements}, {asset.download.fileExtension}, {asset.size}
                 </span>
               </div>
             ))}

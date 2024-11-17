@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { WidthLimiter } from '@/components/WidthLimiter'
 import './index.scss'
 import { ScrollToTop } from '@/components/ScrollToTop'
+import { isWinter } from '@/utils/date'
 
 export const App: FC = () => {
   return (
@@ -18,9 +19,7 @@ export const App: FC = () => {
           </div>
           <Footer />
         </WidthLimiter>
-        <div className="app__effects">
-          <Snowfall />
-        </div>
+        <div className="app__effects">{isWinter() && <Snowfall />}</div>
       </ScrollToTop>
     </div>
   )

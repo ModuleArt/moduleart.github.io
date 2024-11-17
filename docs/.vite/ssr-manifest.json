@@ -589,17 +589,22 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.054e813a.mjs": [
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.B6SGTWpD.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.579feabb.mjs": [
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C0y5wbxl.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.a292c181.mjs": [
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.C6pK7rvr.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CjIppNIS.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
@@ -754,6 +759,31 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
+  "src/config/projects/plain-color.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/config/projects/quick-color-picker.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/config/projects/quick-picture-viewer.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/config/projects/sz-context.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/enums/FileExtension.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
   "src/enums/Platform.ts": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
@@ -800,6 +830,11 @@
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
   "src/routes/index.tsx": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
+  "src/utils/date.ts": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"

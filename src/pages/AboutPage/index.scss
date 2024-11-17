@@ -4,5 +4,10 @@
   &__heading {
     font-size: var(--font-size-mx);
     font-weight: var(--font-weight-lg);
+    margin: var(--size-xl) 0;
+  }
+
+  &__article {
+    text-align: left;
   }
 }

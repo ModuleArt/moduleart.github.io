@@ -1,4 +1,4 @@
-import { Platform } from '@/enums/Platform'
+import { Download } from './Download'
 
 export interface Project {
   title: string
@@ -9,8 +9,7 @@ export interface Project {
   images: string[]
   githubPath: string
   donateUrl?: string
-  platforms: Platform[]
-  os: string
+  downloads: Download[]
   authorName: string
   authorUrl: string
 }

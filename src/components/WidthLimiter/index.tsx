@@ -3,14 +3,9 @@ import cn from 'classnames'
 import { Props } from './Props'
 import './index.scss'
 
-export const WidthLimiter: FC<PropsWithChildren<Props>> = ({ children, className = '' }) => {
+export const WidthLimiter: FC<PropsWithChildren<Props>> = ({ children, className = '', maxWidth = 900 }) => {
   return (
-    <div
-      className={cn({
-        'width-limiter': true,
-        [className]: true,
-      })}
-    >
+    <div className={cn('width-limiter', [className])} style={{ maxWidth: `${maxWidth}px` }}>
       {children}
     </div>
   )

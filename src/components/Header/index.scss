@@ -20,7 +20,7 @@
       pointer-events: nonea;
 
       &::after {
-        content: "❤";
+        content: '❤';
         border-radius: var(--size-xs);
         opacity: 0;
         transition: opacity var(--duration-t);
