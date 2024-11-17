@@ -9,7 +9,7 @@ export interface Project {
   images: string[]
   githubPath: string
   donateUrl?: string
-  platform: Platform
+  platforms: Platform[]
   os: string
   authorName: string
   authorUrl: string

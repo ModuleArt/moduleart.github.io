@@ -5,5 +5,5 @@ export interface Props {
   title: string
   href?: string
   image: string
-  platform: Platform
+  platforms?: Platform[]
 }

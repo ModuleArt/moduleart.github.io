@@ -14,7 +14,7 @@ export const ProjectsList: FC<Props> = ({ projects }) => {
             title={project.title}
             href={project.href}
             image={project.images[0]}
-            platform={project.platform}
+            platforms={project.platforms}
           />
         )
       })}

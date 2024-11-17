@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from 'react'
-import axios from 'axios'
 import { Platform } from '@/enums/Platform'
 import { formatBytes } from '@/helpers/dataHelper'
 import { Props } from './Props'
@@ -10,6 +9,7 @@ import { MarkdownView } from '@/components/MarkdownView'
 import { Contributors } from '@/components/Contributors'
 import './index.scss'
 import { PageMeta } from '@/components/PageMeta'
+import apiClient from '@/api'
 
 export const ProjectPage: FC<Props> = ({ project }) => {
   const [isLoading, setLoading] = useState(true)
@@ -35,9 +35,9 @@ export const ProjectPage: FC<Props> = ({ project }) => {
 
   useEffect(() => {
     Promise.all([
-      axios
+      apiClient
         .get<{ tag_name: string; assets: { size: number; browser_download_url: string }[]; body: string; published_at: string }>(
-          `https://api.github.com/repos/${project.githubPath}/releases/latest`
+          `/repos/${project.githubPath}/releases/latest`
         )
         .then(({ data }) => {
           const releaseData = {
@@ -59,25 +59,23 @@ export const ProjectPage: FC<Props> = ({ project }) => {
 
           setReleaseData(releaseData)
         }),
-      axios.get<{ stargazers_count: string; open_issues_count: string }>(`https://api.github.com/repos/${project.githubPath}`).then(({ data }) => {
+      apiClient.get<{ stargazers_count: string; open_issues_count: string }>(`/repos/${project.githubPath}`).then(({ data }) => {
         setProjectData({
           stars: data.stargazers_count,
           openedIssues: data.open_issues_count,
         })
       }),
-      axios
-        .get<{ login: string; html_url: string; avatar_url: string }[]>(`https://api.github.com/repos/${project.githubPath}/contributors`)
-        .then(({ data }) => {
-          setContributors(
-            data.map((c) => {
-              return {
-                login: c.login,
-                profileUrl: c.html_url,
-                avatarUrl: c.avatar_url,
-              }
-            })
-          )
-        }),
+      apiClient.get<{ login: string; html_url: string; avatar_url: string }[]>(`/repos/${project.githubPath}/contributors`).then(({ data }) => {
+        setContributors(
+          data.map((c) => {
+            return {
+              login: c.login,
+              profileUrl: c.html_url,
+              avatarUrl: c.avatar_url,
+            }
+          })
+        )
+      }),
     ]).then(() => {
       setLoading(false)
     })
@@ -98,19 +96,21 @@ export const ProjectPage: FC<Props> = ({ project }) => {
           <Loading />
         ) : (
           <div className="project-page__buttons">
-            <div className="project-page__button-holder">
-              <a className="project-page__button project-page__button--primary" href={releaseData.downloadUrl}>
-                <img
-                  src={project.platform === Platform.win ? '/assets/images/icons/ic:baseline-window.svg' : '/assets/images/icons/ic:baseline-apple.svg'}
-                  alt="Download"
-                />
-                <span className="project-page__button-text">Download</span>
-                <span className="project-page__button-version">{releaseData.version}</span>
-              </a>
-              <span className="project-page__button-label">
-                {project.os}, {releaseData.size}
-              </span>
-            </div>
+            {project.platforms.map((platform) => (
+              <div className="project-page__button-holder">
+                <a className="project-page__button project-page__button--primary" href={releaseData.downloadUrl}>
+                  <img
+                    src={platform === Platform.win ? '/assets/images/icons/ic:baseline-window.svg' : '/assets/images/icons/ic:baseline-apple.svg'}
+                    alt="Download"
+                  />
+                  <span className="project-page__button-text">Download</span>
+                  <span className="project-page__button-version">{releaseData.version}</span>
+                </a>
+                <span className="project-page__button-label">
+                  {project.os}, {releaseData.size}
+                </span>
+              </div>
+            ))}
             <div className="project-page__button-holder">
               <a className="project-page__button" href={`https://github.com/${project.githubPath}`} target="_blank">
                 <img src="/assets/images/icons/ic:baseline-code.svg" alt="GitHub" />

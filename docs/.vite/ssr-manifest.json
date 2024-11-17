@@ -604,6 +604,11 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
+  "src/api/index.ts": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
   "src/assets/scss/animations.scss": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",

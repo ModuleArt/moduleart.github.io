@@ -4,7 +4,7 @@ import cn from 'classnames'
 import { Props } from './Props'
 import './index.scss'
 
-export const ProjectCard: FC<Props> = ({ className, title, href = null, image, platform }) => {
+export const ProjectCard: FC<Props> = ({ className, title, href = null, image, platforms = [] }) => {
   return (
     <div
       className={cn({
@@ -15,7 +15,7 @@ export const ProjectCard: FC<Props> = ({ className, title, href = null, image, p
     >
       <h2 className="project-card__title">
         <span className="project-card__text">{title} </span>
-        <span className="project-card__platform">for {platform}</span>
+        {platforms.length > 0 && <span className="project-card__platform">for {platforms.join(', ')}</span>}
       </h2>
       {href ? (
         <RouterLink className="project-card__tile" to={href}>

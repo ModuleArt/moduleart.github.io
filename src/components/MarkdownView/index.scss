@@ -11,6 +11,10 @@
   h6 {
     margin: var(--size-xl) 0 var(--size-md) !important;
     font-weight: var(--font-weight-lg) !important;
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
   }
 
   img {
