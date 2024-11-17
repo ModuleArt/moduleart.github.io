@@ -12,7 +12,6 @@
     width: auto;
     max-height: 480px;
     filter: var(--shadow-xl);
-    border-radius: var(--size-md);
   }
 
   &__arrow {
@@ -103,6 +102,7 @@
         filter: var(--shadow-lg);
         width: 100%;
         transition: filter var(--duration-t);
+        background: var(--color-substrate);
       }
     }
 

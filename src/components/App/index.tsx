@@ -19,7 +19,7 @@ export const App: FC = () => {
           </div>
           <Footer />
         </WidthLimiter>
-        <div className="app__effects">{isWinter() && <Snowfall />}</div>
+        <div className="app__effects">{isWinter() && <Snowfall snowflakeCount={100} />}</div>
       </ScrollToTop>
     </div>
   )

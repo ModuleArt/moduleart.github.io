@@ -27,7 +27,6 @@
   &__image {
     max-width: 100%;
     transition: filter var(--duration-t), transform var(--duration-t);
-    border-radius: var(--size-md);
     filter: var(--shadow-lg);
   }
 

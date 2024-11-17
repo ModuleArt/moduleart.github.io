@@ -7,7 +7,7 @@ export const Project_PlainColor: Project = {
   shortDescription: 'Lightweight stylish cross-platform color picker app',
   longDescription: 'We are in active development, and many new features are coming soon...',
   href: '/plain-color',
-  appIcon: '/assets/images/projects/plain-color/icon.png',
+  appIcon: '/assets/images/projects/plain-color/icon.webp',
   images: ['/assets/images/projects/plain-color/1.webp'],
   githubPath: 'ModuleArt/plain-color',
   donateUrl: 'https://opencollective.com/moduleart/projects/plaincolor',

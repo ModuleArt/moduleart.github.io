@@ -3,11 +3,12 @@ import './index.scss'
 import { PageMeta } from '@/components/PageMeta'
 import { Link } from '@/components/Link'
 import { WidthLimiter } from '@/components/WidthLimiter'
+import { mainConfig } from '@/config/Main'
 
 export const AboutPage: FC = () => {
   return (
     <div className="about-page">
-      <PageMeta title="About ModuleArt" />
+      <PageMeta title={`About ${mainConfig.title}`} />
 
       <h1 className="about-page__heading">About</h1>
 

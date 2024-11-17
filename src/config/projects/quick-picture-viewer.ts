@@ -8,8 +8,8 @@ export const Project_QuickPictureViewer: Project = {
   longDescription:
     'Small and fast but still have a bunch of features. 20+ formats supported. Works great with GIF, SVG, PNG, WEBP, ICO, BMP, DDS, TGA, CR2 etc.',
   href: '/quick-picture-viewer',
-  appIcon: '/assets/images/projects/quick-picture-viewer/icon.png',
-  images: ['/assets/images/projects/quick-picture-viewer/1.png', '/assets/images/projects/quick-picture-viewer/2.png'],
+  appIcon: '/assets/images/projects/quick-picture-viewer/icon.webp',
+  images: ['/assets/images/projects/quick-picture-viewer/1.webp', '/assets/images/projects/quick-picture-viewer/2.webp'],
   githubPath: 'ModuleArt/quick-picture-viewer',
   donateUrl: 'https://opencollective.com/moduleart/projects/quick-picture-viewer',
   downloads: [{ platform: Platform.win, fileExtension: FileExtension.exe, requirements: 'Windows 7+' }],
