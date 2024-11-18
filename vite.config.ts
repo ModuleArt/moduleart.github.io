@@ -1,9 +1,9 @@
-import { defineConfig, UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import sitemap from 'vite-plugin-sitemap'
 
-const config: UserConfig = {
+export default defineConfig({
   plugins: [
     react(),
     sitemap({
@@ -30,6 +30,12 @@ const config: UserConfig = {
       },
     },
   },
-}
-
-export default defineConfig(() => config)
+  // @ts-expect-error custom options for beasties used by vite-react-ssg
+  ssgOptions: {
+    beastiesOptions: {
+      // E.g., change the preload strategy
+      preload: 'media',
+      // Other options: https://github.com/danielroe/beasties#usage
+    },
+  },
+})

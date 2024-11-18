@@ -1,4 +1,3 @@
-import { Navigate } from 'react-router-dom'
 import type { RouteRecord } from 'vite-react-ssg'
 import { App } from '@/components/App'
 import { routeDictionary } from './dictionary'
@@ -30,11 +29,6 @@ export const routes: RouteRecord[] = [
         path: routeDictionary.project(project.href),
         element: <ProjectPage project={project} />,
       })),
-      {
-        id: '404',
-        path: '*',
-        element: <Navigate to={routeDictionary.home()} />,
-      },
     ],
   },
 ]

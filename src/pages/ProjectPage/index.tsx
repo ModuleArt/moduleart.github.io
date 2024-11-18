@@ -132,7 +132,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             ))}
             <div className="project-page__button-holder">
               <a className="project-page__button" href={`https://github.com/${project.githubPath}`} target="_blank">
-                <img src="/assets/images/icons/ic:baseline-code.svg" alt="GitHub" />
+                <img src="/assets/images/icons/ic:baseline-code.svg" alt="" />
                 <span className="project-page__button-text">GitHub</span>
               </a>
               <span className="project-page__button-label">
@@ -142,7 +142,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             {project.donateUrl && (
               <div className="project-page__button-holder">
                 <a className="project-page__button" href={project.donateUrl} target="_blank">
-                  <img src="/assets/images/icons/ic:baseline-attach-money.svg" alt="Donate" />
+                  <img src="/assets/images/icons/ic:baseline-attach-money.svg" alt="" />
                   <span className="project-page__button-text">Donate</span>
                 </a>
                 <span className="project-page__button-label">Open Collective</span>

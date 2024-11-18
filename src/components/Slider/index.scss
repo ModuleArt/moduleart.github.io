@@ -35,12 +35,12 @@
 
     &--next {
       right: calc(var(--size-xl) * -1);
-      background-image: url('../../assets/images/icons/ic:baseline-chevron-right.svg');
+      background-image: url('/assets/images/icons/ic:baseline-chevron-right.svg');
     }
 
     &--prev {
       left: calc(var(--size-xl) * -1);
-      background-image: url('../../assets/images/icons/ic:baseline-chevron-left.svg');
+      background-image: url('/assets/images/icons/ic:baseline-chevron-left.svg');
     }
   }
 
