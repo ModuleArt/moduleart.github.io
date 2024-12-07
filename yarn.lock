@@ -2605,10 +2605,10 @@ vite-plugin-sitemap@^0.7.1:
   resolved "https://registry.yarnpkg.com/vite-plugin-sitemap/-/vite-plugin-sitemap-0.7.1.tgz#3b3cf6d2e067ec835f810e5eaaacf05485c819fe"
   integrity sha512-4NRTkiWytLuAmcikckrLcLl9iYA20+5v6l8XshcOrzxH1WR8H0O3S6sTQYfjMrE8su/LG6Y0cTodvOdcOIxaLw==
 
-vite-react-ssg@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/vite-react-ssg/-/vite-react-ssg-0.8.0.tgz#5af4d02117c27e5e4a869e006c4908c4192f1c90"
-  integrity sha512-9Jt2xY5kRZI7omm9hyIKrnkyrMkzJdWKVEv063lIOEs8WIJB6RpPPaCpAp+5K2LsFS0poOSdkcIWchcc9uUFzA==
+vite-react-ssg@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/vite-react-ssg/-/vite-react-ssg-0.8.1.tgz#d07cf27fec413887640b6b75f71c4bcce8e4568b"
+  integrity sha512-GrjaRuP4pZPXTupTJP4L4RbhGKBd9NrlgR6XX0CnSZ2rBPLTX6SpnzQb6hv1fYeHt8+GlmYu27oVWH39ClfxCA==
   dependencies:
     "@remix-run/web-fetch" "^4.4.2"
     fs-extra "^11.2.0"

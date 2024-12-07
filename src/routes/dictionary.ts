@@ -1,5 +1,5 @@
 export const routeDictionary = {
-  home: () => "/",
-  about: () => "/about",
-  project: (productId: string) => `/${productId}`,
-};
+  home: () => '/',
+  about: () => '/about',
+  project: (href: string) => href,
+}
