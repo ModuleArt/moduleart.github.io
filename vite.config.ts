@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import sitemap from 'vite-plugin-sitemap'
 
+const dynamicRoutes = ['/about', '/quickpictureviewer', '/plaincolor', '/szcontext', '/quickcolorpicker']
+
 export default defineConfig({
   plugins: [
     react(),
@@ -10,6 +12,7 @@ export default defineConfig({
       outDir: 'docs',
       hostname: 'https://moduleart.github.io/',
       robots: [{ userAgent: '*', allow: '/', disallow: '/assets' }],
+      dynamicRoutes,
     }),
   ],
   resolve: {
