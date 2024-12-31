@@ -10,5 +10,5 @@ export const mainConfig: MainConfig = {
   url: 'https://moduleart.github.io',
   title: 'ModuleArt',
   description: 'Best apps with love',
-  projects: [Project_QuickPictureViewer, Project_PlainColor, Project_SzContext, Project_QuickColorPicker],
+  projects: [Project_PlainColor, Project_QuickPictureViewer, Project_SzContext, Project_QuickColorPicker],
 }
