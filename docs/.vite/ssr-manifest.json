@@ -424,11 +424,6 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/react-dom/client.js": [
-    "/assets/Pacifico-Dla-xvIJ.ttf",
-    "/assets/Inter-Regular-B3vv58xm.ttf",
-    "/assets/Inter-Bold-DzTqCIlM.ttf"
-  ],
   "node_modules/react-dom/index.js": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
@@ -599,12 +594,12 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CjIppNIS.mjs": [
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CfJcpdWF.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
-  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.DdDMKzrS.mjs": [
+  "node_modules/vite-react-ssg/dist/shared/vite-react-ssg.CjIppNIS.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
