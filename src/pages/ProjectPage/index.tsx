@@ -108,7 +108,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       <PageMeta title={`${project.title} - ${project.shortDescription}`} />
 
       <div className="project-page__head">
-        <img className="project-page__app-icon" src={project.appIcon} alt={project.title} />
+        <img width={128} height={128} className="project-page__app-icon" src={project.appIcon} alt={project.title} />
         <h1 className="project-page__title">{project.title}</h1>
         <h2 className="project-page__description">
           {project.shortDescription}.<br />
@@ -122,6 +122,8 @@ export const ProjectPage: FC<Props> = ({ project }) => {
               <div className="project-page__button-holder" key={asset.download.fileExtension}>
                 <a className="project-page__button project-page__button--primary" href={asset.downloadUrl}>
                   <img
+                    width={24}
+                    height={24}
                     src={
                       asset.download.platform === Platform.win
                         ? '/assets/images/icons/google-material-icons/ic:baseline-window.svg'
@@ -139,7 +141,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             ))}
             <div className="project-page__button-holder">
               <a className="project-page__button" href={`https://github.com/${project.githubPath}`} target="_blank">
-                <img src="/assets/images/icons/google-material-icons/ic:baseline-code.svg" alt="" />
+                <img width={24} height={24} src="/assets/images/icons/google-material-icons/ic:baseline-code.svg" alt="" />
                 <span className="project-page__button-text">GitHub</span>
               </a>
               <span className="project-page__button-label">
@@ -149,7 +151,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             {project.donateUrl && (
               <div className="project-page__button-holder">
                 <a className="project-page__button" href={project.donateUrl} target="_blank">
-                  <img src="/assets/images/icons/google-material-icons/ic:baseline-attach-money.svg" alt="" />
+                  <img width={24} height={24} src="/assets/images/icons/google-material-icons/ic:baseline-attach-money.svg" alt="" />
                   <span className="project-page__button-text">Donate</span>
                 </a>
                 <span className="project-page__button-label">Open Collective</span>
@@ -166,7 +168,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             {project.features.map((feature) => (
               <div className={cn('project-page__feature', { 'project-page__feature--small': !feature.description })} key={feature.icon}>
                 <h3 className="project-page__feature-title">
-                  <img className="project-page__feature-icon" src={feature.icon} alt="" />
+                  <img width={24} height={24} className="project-page__feature-icon" src={feature.icon} alt={feature.title} />
                   {feature.title}
                 </h3>
                 {feature.description && <p className="project-page__feature-description">{feature.description}</p>}
@@ -178,10 +180,10 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       )}
       <h2 className="project-page__tile-heading">What's new</h2>
       {!isLoading && (
-        <h4 className="project-page__release-name">
+        <h3 className="project-page__release-name">
           <Link href={`https://github.com/${project.githubPath}/releases/latest`} text={`Release ${releaseData.version}`} />
           <span className="project-page__release-date">{` - ${releaseData.releaseDate}`}</span>
-        </h4>
+        </h3>
       )}
       {(isLoading || releaseData.releaseMd) && (
         <div className="project-page__tile">{isLoading ? <Loading /> : <MarkdownView markdown={releaseData.releaseMd} />}</div>

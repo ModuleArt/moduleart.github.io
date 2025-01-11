@@ -6,7 +6,7 @@ const apiClient = axios.create({
   timeout: 20000,
   headers: {
     'Content-Type': 'application/json',
-    // Authorization: `Bearer ${envConfig.githubToken}`,
+    // Authorization: envConfig.githubToken ? `Bearer ${envConfig.githubToken}` : undefined,
   },
 })
 

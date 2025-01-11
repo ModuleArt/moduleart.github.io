@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      pointer-events: nonea;
+      pointer-events: none;
 
       &::after {
         content: '❤';

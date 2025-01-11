@@ -3,10 +3,6 @@
     text-align: center;
   }
 
-  &__app-icon {
-    width: 128px;
-  }
-
   &__title {
     font-size: var(--font-size-mx);
     margin: var(--size-lg) 0;
@@ -52,8 +48,6 @@
 
     img {
       margin-right: var(--size-md);
-      width: 24px;
-      height: 24px;
     }
 
     &--primary {
@@ -86,6 +80,7 @@
   }
 
   &__release-name {
+    font-size: var(--font-size-md);
     text-align: center;
     margin: var(--size-lg) 0;
     font-weight: var(--font-weight-md);
