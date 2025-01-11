@@ -6,4 +6,22 @@
       margin-bottom: 0;
     }
   }
+
+  &--small {
+    display: flex;
+    margin: calc(var(--size-md) * -1);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &--small &__project {
+    flex-basis: calc(50% - var(--size-md) * 2);
+    margin: var(--size-xl) var(--size-md) var(--size-md);
+  }
+
+  @media (max-width: 768px) {
+    &--small &__project {
+      flex-basis: 100%;
+    }
+  }
 }

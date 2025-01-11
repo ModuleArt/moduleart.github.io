@@ -1,4 +1,5 @@
 import { Download } from './Download'
+import { ProjectFeature } from './ProjectFeature'
 
 export interface Project {
   title: string
@@ -12,5 +13,5 @@ export interface Project {
   downloads: Download[]
   authorName: string
   authorUrl: string
-  features?: string[]
+  features?: ProjectFeature[]
 }

@@ -11,9 +11,12 @@ import './index.scss'
 import { PageMeta } from '@/components/PageMeta'
 import apiClient from '@/api'
 import { DownloadAsset } from '@/interfaces/DownloadAsset'
+import cn from 'classnames'
+import { mainConfig } from '@/config/Main'
+import { ProjectsList } from '@/components/ProjectsList'
 
 export const ProjectPage: FC<Props> = ({ project }) => {
-  const [isLoading, setLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
   const [projectData, setProjectData] = useState({
     stars: '',
     openedIssues: '',
@@ -34,6 +37,8 @@ export const ProjectPage: FC<Props> = ({ project }) => {
   const [assets, setAssets] = useState<DownloadAsset[]>([])
 
   useEffect(() => {
+    setIsLoading(true)
+
     Promise.all([
       apiClient
         .get<{ tag_name: string; assets: { size: number; browser_download_url: string }[]; body: string; published_at: string }>(
@@ -94,9 +99,9 @@ export const ProjectPage: FC<Props> = ({ project }) => {
         )
       }),
     ]).then(() => {
-      setLoading(false)
+      setIsLoading(false)
     })
-  }, [])
+  }, [project])
 
   return (
     <div className="project-page">
@@ -118,7 +123,9 @@ export const ProjectPage: FC<Props> = ({ project }) => {
                 <a className="project-page__button project-page__button--primary" href={asset.downloadUrl}>
                   <img
                     src={
-                      asset.download.platform === Platform.win ? '/assets/images/icons/ic:baseline-window.svg' : '/assets/images/icons/ic:baseline-apple.svg'
+                      asset.download.platform === Platform.win
+                        ? '/assets/images/icons/google-material-icons/ic:baseline-window.svg'
+                        : '/assets/images/icons/google-material-icons/ic:baseline-apple.svg'
                     }
                     alt="Download"
                   />
@@ -132,7 +139,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             ))}
             <div className="project-page__button-holder">
               <a className="project-page__button" href={`https://github.com/${project.githubPath}`} target="_blank">
-                <img src="/assets/images/icons/ic:baseline-code.svg" alt="" />
+                <img src="/assets/images/icons/google-material-icons/ic:baseline-code.svg" alt="" />
                 <span className="project-page__button-text">GitHub</span>
               </a>
               <span className="project-page__button-label">
@@ -142,7 +149,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             {project.donateUrl && (
               <div className="project-page__button-holder">
                 <a className="project-page__button" href={project.donateUrl} target="_blank">
-                  <img src="/assets/images/icons/ic:baseline-attach-money.svg" alt="" />
+                  <img src="/assets/images/icons/google-material-icons/ic:baseline-attach-money.svg" alt="" />
                   <span className="project-page__button-text">Donate</span>
                 </a>
                 <span className="project-page__button-label">Open Collective</span>
@@ -155,12 +162,17 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       {project.features && project.features.length > 0 && (
         <>
           <h2 className="project-page__tile-heading">Features</h2>
-          <div className="project-page__tile">
-            <ul className="project-page__features">
-              {project.features.map((feature) => (
-                <li key={feature}>{feature}</li>
-              ))}
-            </ul>
+          <div className="project-page__features">
+            {project.features.map((feature) => (
+              <div className={cn('project-page__feature', { 'project-page__feature--small': !feature.description })} key={feature.icon}>
+                <h3 className="project-page__feature-title">
+                  <img className="project-page__feature-icon" src={feature.icon} alt="" />
+                  {feature.title}
+                </h3>
+                {feature.description && <p className="project-page__feature-description">{feature.description}</p>}
+                {feature.image && <img className="project-page__feature-image" src={feature.image} />}
+              </div>
+            ))}
           </div>
         </>
       )}
@@ -176,6 +188,8 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       )}
       <h2 className="project-page__tile-heading">Contributors</h2>
       <div className="project-page__tile">{isLoading ? <Loading /> : <Contributors contributors={contributors} />}</div>
+      <h2 className="project-page__tile-heading">Check out our other awesome apps!</h2>
+      <ProjectsList size="small" projects={mainConfig.projects.filter((p) => p.href !== project.href)} />
     </div>
   )
 }

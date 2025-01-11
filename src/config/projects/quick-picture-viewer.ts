@@ -16,17 +16,47 @@ export const Project_QuickPictureViewer: Project = {
   authorName: 'Eugene Volynko',
   authorUrl: 'https://github.com/Beelink',
   features: [
-    'Lightweight - Small and fast but still have a bunch of features',
-    '20+ formats supported - Works great with GIF, SVG, PNG, WEBP, ICO, BMP, DDS, TGA, CR2 etc.',
-    'Basic image editing: Rotate, flip, crop, change file type ...',
-    'Plugins ready - You can extend the functionality of the app using the built-in plugin manager',
-    'Open image with external app or show file in explorer',
-    'Shortcuts - You will find a hotkey for any action',
-    'PSD support',
-    'Picture-in-Picture mode',
-    'Always on top mode',
-    'A lot of configurable settings',
-    'Slideshow',
-    'Dark mode',
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-rocket-launch.svg',
+      title: 'Lightweight',
+      description: 'Small and fast but crammed with a bunch of features',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-image.svg',
+      title: '20+ formats supported',
+      description: 'Works great with GIF, SVG, PNG, WEBP, ICO, BMP, DDS, TGA, CR2, etc.',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-draw.svg',
+      title: 'Basic image editing',
+      description: 'Rotate, flip, crop, change file type ...',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-square-foot.svg',
+      title: 'Plugins ready',
+      description: 'Extend the app features using the built-in plugin manager',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-picture-in-picture.svg',
+      title: 'Picture-in-Picture mode',
+      description: 'Great for placing references while drawing',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-keyboard.svg',
+      title: 'Shortcuts',
+      description: 'You will find a hotkey for any action',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-adobe.svg',
+      title: 'PSD support',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-file-upload.svg',
+      title: 'Always on top mode',
+    },
+    {
+      icon: '/assets/images/icons/google-material-icons/ic:baseline-ondemand-video.svg',
+      title: 'Slideshow',
+    },
   ],
 }

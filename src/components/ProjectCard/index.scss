@@ -1,15 +1,26 @@
 .project-card {
   &__title {
-    margin-bottom: var(--size-lg);
     text-align: center;
     font-size: var(--font-size-lg);
   }
 
-  &__text {
+  &--small &__title {
+    font-size: var(--font-size-md);
+  }
+
+  &__description {
+    font-size: var(--font-size-sm);
+    text-align: center;
+    font-weight: var(--font-weight-md);
+    color: var(--color-secondary);
+    margin-top: var(--size-sm);
+  }
+
+  &__title-text {
     font-weight: var(--font-weight-lg);
   }
 
-  &__platform {
+  &__title-platform {
     color: var(--color-secondary);
     font-weight: var(--font-weight-sm);
   }
@@ -22,6 +33,12 @@
     height: 320px;
     padding: calc(var(--size-mx) + var(--size-xl)) var(--size-mx) 0;
     text-align: center;
+    margin-top: var(--size-lg);
+  }
+
+  &--small &__tile {
+    padding: calc(var(--size-xl) + var(--size-lg)) var(--size-xl) 0;
+    height: 200px;
   }
 
   &__image {
@@ -49,8 +66,8 @@
 
   @media (max-width: 420px) {
     &__tile {
-      padding: calc(var(--size-lg) + var(--size-md)) var(--size-lg) 0;
-      height: 160px;
+      padding: calc(var(--size-lg) + var(--size-md)) var(--size-lg) 0 !important;
+      height: 160px !important;
     }
   }
 }
