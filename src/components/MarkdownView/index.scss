@@ -21,9 +21,21 @@
     margin: var(--size-xl) 0 !important;
   }
 
+  ul {
+    padding-left: var(--size-lg);
+  }
+
   li {
     &::before {
       content: '• ';
+    }
+
+    ul {
+      li {
+        &::before {
+          content: '∘ ';
+        }
+      }
     }
   }
 

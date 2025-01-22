@@ -160,7 +160,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
           </div>
         )}
       </div>
-      <Slider images={project.images} />
+      <Slider images={project.images} labels={project.images.map((_, i) => `${project.title} screenshot ${i + 1}`)} />
       {project.features && project.features.length > 0 && (
         <>
           <h2 className="project-page__tile-heading">Features</h2>

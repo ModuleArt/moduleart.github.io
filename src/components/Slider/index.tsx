@@ -5,6 +5,18 @@ import { Props } from './Props'
 import './index.scss'
 
 export const Slider: FC<Props> = ({ images, labels = [] }) => {
+  if (!images.length) return null
+
+  if (images.length === 1) {
+    return (
+      <div className="slider">
+        <div className="slider__slide">
+          <img className="slider__image" src={images[0]} alt={labels[0] || ''} />
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="slider">
       <Carousel
@@ -37,7 +49,7 @@ export const Slider: FC<Props> = ({ images, labels = [] }) => {
         {images.map((image, imageIndex) => {
           return (
             <div className="slider__slide" key={imageIndex}>
-              <img className="slider__image" src={image} alt={labels[imageIndex] ? labels[imageIndex] : ''} />
+              <img className="slider__image" src={image} alt={labels[imageIndex] || ''} />
             </div>
           )
         })}
