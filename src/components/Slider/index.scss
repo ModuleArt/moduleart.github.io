@@ -25,12 +25,12 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--color-bg);
     z-index: 1;
     filter: var(--shadow-lg);
 
     &:hover {
-      background-color: #fff;
+      background-color: var(--color-bg);
     }
 
     &--next {
@@ -69,7 +69,7 @@
         width: var(--size-md);
         height: var(--size-md);
         border-radius: 50%;
-        background: #fff;
+        background: var(--color-bg);
         opacity: 0;
         transition: opacity var(--duration-t), transform var(--duration-t);
         top: calc(100% - var(--size-lg));

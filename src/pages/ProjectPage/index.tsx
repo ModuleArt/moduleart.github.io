@@ -168,11 +168,11 @@ export const ProjectPage: FC<Props> = ({ project }) => {
             {project.features.map((feature) => (
               <div className={cn('project-page__feature', { 'project-page__feature--small': !feature.description })} key={feature.icon}>
                 <h3 className="project-page__feature-title">
-                  <img width={24} height={24} className="project-page__feature-icon" src={feature.icon} alt={feature.title} />
+                  <img width={24} height={24} className="project-page__feature-icon" src={feature.icon} alt="" />
                   {feature.title}
                 </h3>
                 {feature.description && <p className="project-page__feature-description">{feature.description}</p>}
-                {feature.image && <img className="project-page__feature-image" src={feature.image} />}
+                {feature.image && <img className="project-page__feature-image" src={feature.image} alt={feature.title} />}
               </div>
             ))}
           </div>

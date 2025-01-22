@@ -1,6 +1,6 @@
 .markdown-view {
   * {
-    all: inherit !important;
+    font: inherit !important;
   }
 
   h1,
@@ -25,5 +25,16 @@
     &::before {
       content: '• ';
     }
+  }
+
+  a {
+    color: var(--color-primary);
+  }
+
+  code {
+    background-color: var(--color-secondary);
+    color: var(--color-bg);
+    border-radius: var(--size-sm);
+    padding: 0 var(--size-sm);
   }
 }

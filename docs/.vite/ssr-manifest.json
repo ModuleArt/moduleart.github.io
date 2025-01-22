@@ -389,17 +389,17 @@
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
+  "node_modules/dompurify/dist/purify.es.mjs": [
+    "/assets/Pacifico-Dla-xvIJ.ttf",
+    "/assets/Inter-Regular-B3vv58xm.ttf",
+    "/assets/Inter-Bold-DzTqCIlM.ttf"
+  ],
   "node_modules/invariant/browser.js": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"
   ],
   "node_modules/marked/lib/marked.esm.js": [
-    "/assets/Pacifico-Dla-xvIJ.ttf",
-    "/assets/Inter-Regular-B3vv58xm.ttf",
-    "/assets/Inter-Bold-DzTqCIlM.ttf"
-  ],
-  "node_modules/md-to-react-email/dist/index.mjs": [
     "/assets/Pacifico-Dla-xvIJ.ttf",
     "/assets/Inter-Regular-B3vv58xm.ttf",
     "/assets/Inter-Bold-DzTqCIlM.ttf"

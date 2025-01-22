@@ -52,7 +52,7 @@
 
     &--primary {
       background: var(--color-primary);
-      color: #fff;
+      color: var(--color-bg);
       filter: var(--shadow-lg);
       transition: filter var(--duration-t), transform var(--duration-t);
 
