@@ -71,7 +71,7 @@ export const ProjectPage: FC<Props> = ({ project }) => {
                 const download = project.downloads.find((download) => download.fileExtension === assetExt)
 
                 if (download) {
-                  return { size: formatBytes(data.assets[0].size), downloadUrl: data.assets[0].browser_download_url, download }
+                  return { size: formatBytes(asset.size), downloadUrl: asset.browser_download_url, download }
                 }
               }
 
