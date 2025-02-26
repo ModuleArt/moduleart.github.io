@@ -191,7 +191,18 @@ export const ProjectPage: FC<Props> = ({ project }) => {
       <h2 className="project-page__tile-heading">Contributors</h2>
       <div className="project-page__tile">{isLoading ? <Loading /> : <Contributors contributors={contributors} />}</div>
       <h2 className="project-page__tile-heading">Check out our other awesome apps!</h2>
-      <ProjectsList size="small" projects={mainConfig.projects.filter((p) => p.href !== project.href)} />
+      <ProjectsList
+        size="small"
+        projects={mainConfig.projects
+          .filter((p) => p.href !== project.href)
+          .map((project) => ({
+            title: project.title,
+            description: project.shortDescription,
+            image: project.images[0],
+            href: project.href,
+            platforms: project.downloads.map((download) => download.platform),
+          }))}
+      />
     </div>
   )
 }

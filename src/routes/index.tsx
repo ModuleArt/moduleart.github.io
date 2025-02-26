@@ -8,6 +8,7 @@ import { mainConfig } from '@/config/Main'
 import { HomePage } from '@/pages/HomePage'
 import { AboutPage } from '@/pages/AboutPage'
 import { ProjectPage } from '@/pages/ProjectPage'
+import { PlainBudgetPage } from '@/pages/PlainBudgetPage'
 
 export const routes: RouteRecord[] = [
   {
@@ -24,6 +25,11 @@ export const routes: RouteRecord[] = [
         id: 'AboutPage',
         path: routeDictionary.about(),
         element: <AboutPage />,
+      },
+      {
+        id: 'PlainBudgetPage',
+        path: routeDictionary.plainbudget(),
+        element: <PlainBudgetPage />,
       },
       ...mainConfig.projects.map((project) => ({
         id: `ProjectPage--${project.href}`,

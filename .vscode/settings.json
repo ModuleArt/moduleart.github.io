@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/docs": true,
+    "**/dist": true,
+    "**/tmp": true
+  },
+  "editor.formatOnSave": true
+}

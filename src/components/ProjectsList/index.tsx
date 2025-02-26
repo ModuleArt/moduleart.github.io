@@ -13,10 +13,10 @@ export const ProjectsList: FC<Props> = ({ projects, size = 'large' }) => {
             key={index}
             className="projects-list__project"
             title={project.title}
-            description={project.shortDescription}
+            description={project.description}
             href={project.href}
-            image={project.images[0]}
-            platforms={project.downloads.map((d) => d.platform)}
+            image={project.image}
+            platforms={project.platforms}
             size={size}
           />
         )
