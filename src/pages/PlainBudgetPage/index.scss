@@ -1,15 +1,15 @@
 .plain-budget-page {
-  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &__head {
+  &__section-cols {
     display: flex;
     gap: var(--size-mx);
   }
 
-  &__head-col {
+  &__section-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,8 +19,48 @@
     }
 
     &:last-child {
+      flex-basis: 60%;
+    }
+  }
+
+  &__section-cols--reversed &__section-col {
+    &:first-child {
+      flex-basis: 60%;
+    }
+
+    &:last-child {
+      flex: 40%;
+    }
+  }
+
+  &__section-cols--tile {
+    background: var(--color-substrate);
+    border-radius: var(--size-lg);
+    padding: var(--size-mx);
+    height: 320px;
+    overflow: hidden;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  &__section-cols--tile &__section-col {
+    &:first-child {
       flex: 1;
     }
+
+    &:last-child {
+      flex: 1;
+    }
+  }
+
+  &__section-cols--tile &__title {
+    font-size: var(--font-size-xl);
+    line-height: var(--font-size-mx);
+    margin: 0;
+  }
+
+  &__section-cols--tile &__subtitle {
+    font-size: var(--font-size-sm);
   }
 
   &__phone-holder {
@@ -41,12 +81,17 @@
     height: 94.8%;
     border-radius: 30px;
     overflow: hidden;
+    filter: var(--shadow-xl);
 
     & > img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
+  }
+
+  &__screenshot-desktop {
+    width: 100%;
   }
 
   &__app-icon {
@@ -60,18 +105,42 @@
     line-height: var(--font-size-mx2);
   }
 
+  &__subtitle {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--size-lg);
+  }
+
   &__description {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-md);
+
+    ul {
+      border-radius: var(--size-lg);
+      overflow: hidden;
+
+      li {
+        background: var(--color-substrate);
+        margin-bottom: var(--size-sm);
+        padding: var(--size-md) var(--size-lg);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &__buttons {
     display: flex;
-    padding-top: var(--size-xl);
+    padding: var(--size-xl) 0;
     animation-name: mount-slide;
     animation-duration: var(--duration-t);
     flex-wrap: wrap;
     margin: calc(-1 * var(--size-md));
+
+    &--centered {
+      justify-content: center;
+    }
   }
 
   &__button-holder {
@@ -122,25 +191,99 @@
     font-size: var(--font-size-lg);
   }
 
+  &__head {
+    min-height: calc(100vh - 360px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__section {
+    padding: var(--size-mx2) 0 var(--size-xl);
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  &__scroll-down-container {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--size-mx);
+  }
+
+  &__scroll-down-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+    padding: var(--size-xl);
+
+    & > img {
+      @keyframes jumping-vertical {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(8px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      animation: jumping-vertical 1s infinite;
+    }
+  }
+
+  &__scroll-to-desktop-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   @media (max-width: 992px) {
-    &__head {
+    &__section-cols {
       gap: var(--size-lg);
     }
   }
 
   @media (max-width: 768px) {
-    &__head {
+    &__section-cols {
       flex-direction: column-reverse;
       text-align: center;
-      gap: var(--size-mx);
+      gap: var(--size-xl);
+
+      &--reversed,
+      &--tile {
+        flex-direction: column;
+      }
+
+      &--tile {
+        padding: var(--size-xl) var(--size-lg) 0 var(--size-lg);
+      }
     }
 
     &__buttons {
       justify-content: center;
     }
 
-    &__head-col {
+    &__section-col {
       align-items: center;
+    }
+
+    &__scroll-down-container,
+    &__scroll-to-desktop-button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__button-holder {
+      width: calc(100% - var(--size-mx));
     }
   }
 }
